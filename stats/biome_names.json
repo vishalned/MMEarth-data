@@ -1,0 +1,3420 @@
+{
+    "Tundra": [
+        [
+            "Adelie Land tundra",
+            "Antarctica"
+        ],
+        [
+            "Ahklun and Kilbuck Upland Tundra",
+            "Nearctic"
+        ],
+        [
+            "Alaska-St. Elias Range tundra",
+            "Nearctic"
+        ],
+        [
+            "Aleutian Islands tundra",
+            "Nearctic"
+        ],
+        [
+            "Antipodes Subantarctic Islands tundra",
+            "Australasia"
+        ],
+        [
+            "Arctic coastal tundra",
+            "Nearctic"
+        ],
+        [
+            "Russian Arctic desert",
+            "Palearctic"
+        ],
+        [
+            "Arctic foothills tundra",
+            "Nearctic"
+        ],
+        [
+            "Russian Bering tundra",
+            "Palearctic"
+        ],
+        [
+            "Beringia lowland tundra",
+            "Nearctic"
+        ],
+        [
+            "Beringia upland tundra",
+            "Nearctic"
+        ],
+        [
+            "Brooks-British Range tundra",
+            "Nearctic"
+        ],
+        [
+            "Canadian Low Arctic tundra",
+            "Nearctic"
+        ],
+        [
+            "Central South Antarctic Peninsula tundra",
+            "Antarctica"
+        ],
+        [
+            "Cherskii-Kolyma mountain tundra",
+            "Palearctic"
+        ],
+        [
+            "Chukchi Peninsula tundra",
+            "Palearctic"
+        ],
+        [
+            "Davis Highlands tundra",
+            "Nearctic"
+        ],
+        [
+            "East Antarctic tundra",
+            "Antarctica"
+        ],
+        [
+            "Ellsworth Land tundra",
+            "Antarctica"
+        ],
+        [
+            "Ellsworth Mountains tundra",
+            "Antarctica"
+        ],
+        [
+            "Enderby Land tundra",
+            "Antarctica"
+        ],
+        [
+            "Canadian High Arctic tundra",
+            "Nearctic"
+        ],
+        [
+            "Interior Yukon-Alaska alpine tundra",
+            "Nearctic"
+        ],
+        [
+            "Kalaallit Nunaat High Arctic tundra",
+            "Nearctic"
+        ],
+        [
+            "Kola Peninsula tundra",
+            "Palearctic"
+        ],
+        [
+            "Canadian Middle Arctic Tundra",
+            "Nearctic"
+        ],
+        [
+            "Northeast Antarctic Peninsula tundra",
+            "Antarctica"
+        ],
+        [
+            "Northwest Antarctic Peninsula tundra",
+            "Antarctica"
+        ],
+        [
+            "North Victoria Land tundra",
+            "Antarctica"
+        ],
+        [
+            "Northeast Siberian coastal tundra",
+            "Palearctic"
+        ],
+        [
+            "Northwest Russian-Novaya Zemlya tundra",
+            "Palearctic"
+        ],
+        [
+            "Novosibirsk Islands Arctic desert",
+            "Palearctic"
+        ],
+        [
+            "Ogilvie-MacKenzie alpine tundra",
+            "Nearctic"
+        ],
+        [
+            "Pacific Coastal Mountain icefields and tundra",
+            "Nearctic"
+        ],
+        [
+            "Prince Charles Mountains tundra",
+            "Antarctica"
+        ],
+        [
+            "Scandinavian Montane Birch forest and grasslands",
+            "Palearctic"
+        ],
+        [
+            "Scotia Sea Islands tundra",
+            "Antarctica"
+        ],
+        [
+            "South Antarctic Peninsula tundra",
+            "Antarctica"
+        ],
+        [
+            "South Orkney Islands tundra",
+            "Antarctica"
+        ],
+        [
+            "South Victoria Land tundra",
+            "Antarctica"
+        ],
+        [
+            "Southern Indian Ocean Islands tundra",
+            "Antarctica"
+        ],
+        [
+            "Taimyr-Central Siberian tundra",
+            "Palearctic"
+        ],
+        [
+            "Torngat Mountain tundra",
+            "Nearctic"
+        ],
+        [
+            "Trans-Baikal Bald Mountain tundra",
+            "Palearctic"
+        ],
+        [
+            "Transantarctic Mountains tundra",
+            "Antarctica"
+        ],
+        [
+            "Wrangel Island Arctic desert",
+            "Palearctic"
+        ],
+        [
+            "Yamal-Gydan tundra",
+            "Palearctic"
+        ],
+        [
+            "Kamchatka tundra",
+            "Palearctic"
+        ],
+        [
+            "Kalaallit Nunaat Arctic steppe",
+            "Nearctic"
+        ],
+        [
+            "Dronning Maud Land tundra",
+            "Antarctica"
+        ],
+        [
+            "Marie Byrd Land tundra",
+            "Antarctica"
+        ]
+    ],
+    "Tropical & Subtropical Moist Broadleaf Forests": [
+        [
+            "Admiralty Islands lowland rain forests",
+            "Australasia"
+        ],
+        [
+            "Albertine Rift montane forests",
+            "Afrotropic"
+        ],
+        [
+            "Alto Paran\u00e1 Atlantic forests",
+            "Neotropic"
+        ],
+        [
+            "Andaman Islands rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Araucaria moist forests",
+            "Neotropic"
+        ],
+        [
+            "Atlantic Coast restingas",
+            "Neotropic"
+        ],
+        [
+            "Congolian coastal forests",
+            "Afrotropic"
+        ],
+        [
+            "Bahia coastal forests",
+            "Neotropic"
+        ],
+        [
+            "Bahia interior forests",
+            "Neotropic"
+        ],
+        [
+            "Banda Sea Islands moist deciduous forests",
+            "Australasia"
+        ],
+        [
+            "Biak-Numfoor rain forests",
+            "Australasia"
+        ],
+        [
+            "Bolivian Yungas",
+            "Neotropic"
+        ],
+        [
+            "Borneo lowland rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Borneo peat swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Brahmaputra Valley semi-evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "Buru rain forests",
+            "Australasia"
+        ],
+        [
+            "Caatinga Enclaves moist forests",
+            "Neotropic"
+        ],
+        [
+            "Cameroon Highlands forests",
+            "Afrotropic"
+        ],
+        [
+            "Caqueta moist forests",
+            "Neotropic"
+        ],
+        [
+            "Cardamom Mountains rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Carolines tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Catatumbo moist forests",
+            "Neotropic"
+        ],
+        [
+            "Cauca Valley montane forests",
+            "Neotropic"
+        ],
+        [
+            "Cayos Miskitos-San Andr\u00e9s and Providencia moist forests",
+            "Neotropic"
+        ],
+        [
+            "Central American Atlantic moist forests",
+            "Neotropic"
+        ],
+        [
+            "Central American montane forests",
+            "Neotropic"
+        ],
+        [
+            "Central Congolian lowland forests",
+            "Afrotropic"
+        ],
+        [
+            "Central Polynesian tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Central Range Papuan montane rain forests",
+            "Australasia"
+        ],
+        [
+            "Chao Phraya freshwater swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Chao Phraya lowland moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Chiapas montane forests",
+            "Neotropic"
+        ],
+        [
+            "Chimalapas montane forests",
+            "Neotropic"
+        ],
+        [
+            "Chin Hills-Arakan Yoma montane forests",
+            "Indomalayan"
+        ],
+        [
+            "Choc\u00f3-Dari\u00e9n moist forests",
+            "Neotropic"
+        ],
+        [
+            "Christmas and Cocos Islands tropical forests",
+            "Indomalayan"
+        ],
+        [
+            "Cocos Island moist forests",
+            "Neotropic"
+        ],
+        [
+            "Comoros forests",
+            "Afrotropic"
+        ],
+        [
+            "Cook Islands tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Cordillera La Costa montane forests",
+            "Neotropic"
+        ],
+        [
+            "Cordillera Oriental montane forests",
+            "Neotropic"
+        ],
+        [
+            "Costa Rican seasonal moist forests",
+            "Neotropic"
+        ],
+        [
+            "Cross-Niger transition forests",
+            "Afrotropic"
+        ],
+        [
+            "Cross-Sanaga-Bioko coastal forests",
+            "Afrotropic"
+        ],
+        [
+            "Cuban moist forests",
+            "Neotropic"
+        ],
+        [
+            "Eastern Congolian swamp forests",
+            "Afrotropic"
+        ],
+        [
+            "Eastern Cordillera Real montane forests",
+            "Neotropic"
+        ],
+        [
+            "Eastern Guinean forests",
+            "Afrotropic"
+        ],
+        [
+            "East Deccan moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Eastern Java-Bali montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Eastern Java-Bali rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Eastern Micronesia tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Eastern Panamanian montane forests",
+            "Neotropic"
+        ],
+        [
+            "Ethiopian montane forests",
+            "Afrotropic"
+        ],
+        [
+            "Fernando de Noronha-Atol das Rocas moist forests",
+            "Neotropic"
+        ],
+        [
+            "Fiji tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Granitic Seychelles forests",
+            "Afrotropic"
+        ],
+        [
+            "Greater Negros-Panay rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Guianan freshwater swamp forests",
+            "Neotropic"
+        ],
+        [
+            "Guianan Highlands moist forests",
+            "Neotropic"
+        ],
+        [
+            "Guianan lowland moist forests",
+            "Neotropic"
+        ],
+        [
+            "Guianan piedmont moist forests",
+            "Neotropic"
+        ],
+        [
+            "Guinean montane forests",
+            "Afrotropic"
+        ],
+        [
+            "Guizhou Plateau broadleaf and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Gurupa v\u00e1rzea",
+            "Neotropic"
+        ],
+        [
+            "Hainan Island monsoon rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Halmahera rain forests",
+            "Australasia"
+        ],
+        [
+            "Hawai'i tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Himalayan subtropical broadleaf forests",
+            "Indomalayan"
+        ],
+        [
+            "Hispaniolan moist forests",
+            "Neotropic"
+        ],
+        [
+            "Huon Peninsula montane rain forests",
+            "Australasia"
+        ],
+        [
+            "Iquitos v\u00e1rzea",
+            "Neotropic"
+        ],
+        [
+            "Irrawaddy freshwater swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Irrawaddy moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Isthmian-Atlantic moist forests",
+            "Neotropic"
+        ],
+        [
+            "Isthmian-Pacific moist forests",
+            "Neotropic"
+        ],
+        [
+            "Jamaican moist forests",
+            "Neotropic"
+        ],
+        [
+            "Japur\u00e1-Solim\u00f5es-Negro moist forests",
+            "Neotropic"
+        ],
+        [
+            "Jian Nan subtropical evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "Juru\u00e1-Purus moist forests",
+            "Neotropic"
+        ],
+        [
+            "Kayah-Karen montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Kermadec Islands subtropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Knysna-Amatole montane forests",
+            "Afrotropic"
+        ],
+        [
+            "Kwazulu Natal-Cape coastal forests",
+            "Afrotropic"
+        ],
+        [
+            "Leeward Islands moist forests",
+            "Neotropic"
+        ],
+        [
+            "Lord Howe Island subtropical forests",
+            "Australasia"
+        ],
+        [
+            "Louisiade Archipelago rain forests",
+            "Australasia"
+        ],
+        [
+            "Lower Gangetic Plains moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Luang Prabang montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Luzon montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Luzon rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Madagascar humid forests",
+            "Afrotropic"
+        ],
+        [
+            "Madagascar subhumid forests",
+            "Afrotropic"
+        ],
+        [
+            "Madeira-Tapaj\u00f3s moist forests",
+            "Neotropic"
+        ],
+        [
+            "Magdalena-Urab\u00e1 moist forests",
+            "Neotropic"
+        ],
+        [
+            "Magdalena Valley montane forests",
+            "Neotropic"
+        ],
+        [
+            "Malabar Coast moist forests",
+            "Indomalayan"
+        ],
+        [
+            "Maldives-Lakshadweep-Chagos Archipelago tropical moist forests",
+            "Indomalayan"
+        ],
+        [
+            "Maputaland coastal forests and woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Maraj\u00f3 v\u00e1rzea",
+            "Neotropic"
+        ],
+        [
+            "Mara\u00f1\u00f3n dry forests",
+            "Neotropic"
+        ],
+        [
+            "Marquesas tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Mascarene forests",
+            "Afrotropic"
+        ],
+        [
+            "Mato Grosso tropical dry forests",
+            "Neotropic"
+        ],
+        [
+            "Meghalaya subtropical forests",
+            "Indomalayan"
+        ],
+        [
+            "Mentawai Islands rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Mindanao-Eastern Visayas rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Mindanao montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Mindoro rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Mizoram-Manipur-Kachin rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Monte Alegre v\u00e1rzea",
+            "Neotropic"
+        ],
+        [
+            "Mount Cameroon and Bioko montane forests",
+            "Afrotropic"
+        ],
+        [
+            "Myanmar coastal rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Nansei Islands subtropical evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "Napo moist forests",
+            "Neotropic"
+        ],
+        [
+            "Negro-Branco moist forests",
+            "Neotropic"
+        ],
+        [
+            "New Britain-New Ireland lowland rain forests",
+            "Australasia"
+        ],
+        [
+            "New Britain-New Ireland montane rain forests",
+            "Australasia"
+        ],
+        [
+            "New Caledonia rain forests",
+            "Australasia"
+        ],
+        [
+            "Nicobar Islands rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Niger Delta swamp forests",
+            "Afrotropic"
+        ],
+        [
+            "Nigerian lowland forests",
+            "Afrotropic"
+        ],
+        [
+            "Norfolk Island subtropical forests",
+            "Australasia"
+        ],
+        [
+            "North Western Ghats moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "North Western Ghats montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Northeast Brazil restingas",
+            "Neotropic"
+        ],
+        [
+            "Northeast Congolian lowland forests",
+            "Afrotropic"
+        ],
+        [
+            "Northern Annamites rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Northern Indochina subtropical forests",
+            "Indomalayan"
+        ],
+        [
+            "Northern Khorat Plateau moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Northern New Guinea lowland rain and freshwater swamp forests",
+            "Australasia"
+        ],
+        [
+            "Northern New Guinea montane rain forests",
+            "Australasia"
+        ],
+        [
+            "Northern Swahili coastal forests",
+            "Afrotropic"
+        ],
+        [
+            "Northern Thailand-Laos moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Northern Triangle subtropical forests",
+            "Indomalayan"
+        ],
+        [
+            "Northern Vietnam lowland rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Northwest Andean montane forests",
+            "Neotropic"
+        ],
+        [
+            "Northwest Congolian lowland forests",
+            "Afrotropic"
+        ],
+        [
+            "Oaxacan montane forests",
+            "Neotropic"
+        ],
+        [
+            "Ogasawara subtropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Orinoco Delta swamp forests",
+            "Neotropic"
+        ],
+        [
+            "Orissa semi-evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "Palau tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Palawan rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Pantanos de Centla",
+            "Neotropic"
+        ],
+        [
+            "Pantepui forests & shrublands",
+            "Neotropic"
+        ],
+        [
+            "Peninsular Malaysian montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Peninsular Malaysian peat swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Peninsular Malaysian rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Pernambuco coastal forests",
+            "Neotropic"
+        ],
+        [
+            "Pernambuco interior forests",
+            "Neotropic"
+        ],
+        [
+            "Peruvian Yungas",
+            "Neotropic"
+        ],
+        [
+            "Pet\u00e9n-Veracruz moist forests",
+            "Neotropic"
+        ],
+        [
+            "Puerto Rican moist forests",
+            "Neotropic"
+        ],
+        [
+            "Purus-Madeira moist forests",
+            "Neotropic"
+        ],
+        [
+            "Purus v\u00e1rzea",
+            "Neotropic"
+        ],
+        [
+            "Queensland tropical rain forests",
+            "Australasia"
+        ],
+        [
+            "Rapa Nui and Sala y G\u00f3mez subtropical forests",
+            "Oceania"
+        ],
+        [
+            "Red River freshwater swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Rio Negro campinarana",
+            "Neotropic"
+        ],
+        [
+            "Samoan tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Santa Marta montane forests",
+            "Neotropic"
+        ],
+        [
+            "S\u00e3o Tom\u00e9, Pr\u00edncipe, and Annob\u00f3n forests",
+            "Afrotropic"
+        ],
+        [
+            "Seram rain forests",
+            "Australasia"
+        ],
+        [
+            "Serra do Mar coastal forests",
+            "Neotropic"
+        ],
+        [
+            "Sierra de los Tuxtlas",
+            "Neotropic"
+        ],
+        [
+            "Sierra Madre de Chiapas moist forests",
+            "Neotropic"
+        ],
+        [
+            "Society Islands tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Solim\u00f5es-Japur\u00e1 moist forests",
+            "Neotropic"
+        ],
+        [
+            "Solomon Islands rain forests",
+            "Australasia"
+        ],
+        [
+            "South China-Vietnam subtropical evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "South China Sea Islands",
+            "Indomalayan"
+        ],
+        [
+            "South Taiwan monsoon rain forests",
+            "Indomalayan"
+        ],
+        [
+            "South Western Ghats moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "South Western Ghats montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Southeast Papuan rain forests",
+            "Australasia"
+        ],
+        [
+            "Southern Andean Yungas",
+            "Neotropic"
+        ],
+        [
+            "Southern Annamites montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Southern New Guinea freshwater swamp forests",
+            "Australasia"
+        ],
+        [
+            "Southern New Guinea lowland rain forests",
+            "Australasia"
+        ],
+        [
+            "Southern Swahili coastal forests and woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Southwest Amazon moist forests",
+            "Neotropic"
+        ],
+        [
+            "Southwest Borneo freshwater swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Sri Lanka lowland rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Sri Lanka montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Sulawesi montane rain forests",
+            "Australasia"
+        ],
+        [
+            "Sulu Archipelago rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Sumatran freshwater swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Sumatran lowland rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Sumatran montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Sumatran peat swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Sundaland heath forests",
+            "Indomalayan"
+        ],
+        [
+            "Sundarbans freshwater swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Taiwan subtropical evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "Talamancan montane forests",
+            "Neotropic"
+        ],
+        [
+            "Tapaj\u00f3s-Xingu moist forests",
+            "Neotropic"
+        ],
+        [
+            "Tenasserim-South Thailand semi-evergreen rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Tongan tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Tonle Sap-Mekong peat swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Tonle Sap freshwater swamp forests",
+            "Indomalayan"
+        ],
+        [
+            "Trinidad and Tobago moist forest",
+            "Neotropic"
+        ],
+        [
+            "Trobriand Islands rain forests",
+            "Australasia"
+        ],
+        [
+            "Tuamotu tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Tubuai tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Uatum\u00e3-Trombetas moist forests",
+            "Neotropic"
+        ],
+        [
+            "Ucayali moist forests",
+            "Neotropic"
+        ],
+        [
+            "Upper Gangetic Plains moist deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Vanuatu rain forests",
+            "Australasia"
+        ],
+        [
+            "Venezuelan Andes montane forests",
+            "Neotropic"
+        ],
+        [
+            "Veracruz moist forests",
+            "Neotropic"
+        ],
+        [
+            "Veracruz montane forests",
+            "Neotropic"
+        ],
+        [
+            "Vogelkop-Aru lowland rain forests",
+            "Australasia"
+        ],
+        [
+            "Vogelkop montane rain forests",
+            "Australasia"
+        ],
+        [
+            "Western Congolian swamp forests",
+            "Afrotropic"
+        ],
+        [
+            "Western Ecuador moist forests",
+            "Neotropic"
+        ],
+        [
+            "Western Guinean lowland forests",
+            "Afrotropic"
+        ],
+        [
+            "Western Java montane rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Western Java rain forests",
+            "Indomalayan"
+        ],
+        [
+            "Western Polynesian tropical moist forests",
+            "Oceania"
+        ],
+        [
+            "Windward Islands moist forests",
+            "Neotropic"
+        ],
+        [
+            "Xingu-Tocantins-Araguaia moist forests",
+            "Neotropic"
+        ],
+        [
+            "Yapen rain forests",
+            "Australasia"
+        ],
+        [
+            "Yucat\u00e1n moist forests",
+            "Neotropic"
+        ],
+        [
+            "Yunnan Plateau subtropical evergreen forests",
+            "Palearctic"
+        ],
+        [
+            "Tocantins/Pindare moist forests",
+            "Neotropic"
+        ],
+        [
+            "Trindade-Martin Vaz Islands tropical forests",
+            "Neotropic"
+        ],
+        [
+            "Sulawesi lowland rain forests",
+            "Australasia"
+        ],
+        [
+            "East African montane forests",
+            "Afrotropic"
+        ],
+        [
+            "Eastern Arc forests",
+            "Afrotropic"
+        ],
+        [
+            "Borneo montane rain forests",
+            "Indomalayan"
+        ]
+    ],
+    "Mediterranean Forests, Woodlands & Scrub": [
+        [
+            "Aegean and Western Turkey sclerophyllous and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Albany thickets",
+            "Afrotropic"
+        ],
+        [
+            "Anatolian conifer and deciduous mixed forests",
+            "Palearctic"
+        ],
+        [
+            "California coastal sage and chaparral",
+            "Nearctic"
+        ],
+        [
+            "California interior chaparral and woodlands",
+            "Nearctic"
+        ],
+        [
+            "California montane chaparral and woodlands",
+            "Nearctic"
+        ],
+        [
+            "Canary Islands dry woodlands and forests",
+            "Palearctic"
+        ],
+        [
+            "Chilean Matorral",
+            "Neotropic"
+        ],
+        [
+            "Coolgardie woodlands",
+            "Australasia"
+        ],
+        [
+            "Corsican montane broadleaf and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Crete Mediterranean forests",
+            "Palearctic"
+        ],
+        [
+            "Cyprus Mediterranean forests",
+            "Palearctic"
+        ],
+        [
+            "Eastern Mediterranean conifer-broadleaf forests",
+            "Palearctic"
+        ],
+        [
+            "Esperance mallee",
+            "Australasia"
+        ],
+        [
+            "Eyre and York mallee",
+            "Australasia"
+        ],
+        [
+            "Flinders-Lofty montane woodlands",
+            "Australasia"
+        ],
+        [
+            "Fynbos shrubland",
+            "Afrotropic"
+        ],
+        [
+            "Hampton mallee and woodlands",
+            "Australasia"
+        ],
+        [
+            "Iberian conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Iberian sclerophyllous and semi-deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Illyrian deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Italian sclerophyllous and semi-deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Jarrah-Karri forest and shrublands",
+            "Australasia"
+        ],
+        [
+            "Mediterranean Acacia-Argania dry woodlands and succulent thickets",
+            "Palearctic"
+        ],
+        [
+            "Mediterranean dry woodlands and steppe",
+            "Palearctic"
+        ],
+        [
+            "Mediterranean woodlands and forests",
+            "Palearctic"
+        ],
+        [
+            "Murray-Darling woodlands and mallee",
+            "Australasia"
+        ],
+        [
+            "Naracoorte woodlands",
+            "Australasia"
+        ],
+        [
+            "Northeast Spain and Southern France Mediterranean forests",
+            "Palearctic"
+        ],
+        [
+            "Northwest Iberian montane forests",
+            "Palearctic"
+        ],
+        [
+            "Pindus Mountains mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Renosterveld shrubland",
+            "Afrotropic"
+        ],
+        [
+            "Santa Lucia Montane Chaparral & Woodlands",
+            "Nearctic"
+        ],
+        [
+            "South Apennine mixed montane forests",
+            "Palearctic"
+        ],
+        [
+            "Southeast Iberian shrubs and woodlands",
+            "Palearctic"
+        ],
+        [
+            "Southern Anatolian montane conifer and deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Southwest Australia savanna",
+            "Australasia"
+        ],
+        [
+            "Southwest Australia woodlands",
+            "Australasia"
+        ],
+        [
+            "Southwest Iberian Mediterranean sclerophyllous and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Tyrrhenian-Adriatic sclerophyllous and mixed forests",
+            "Palearctic"
+        ]
+    ],
+    "Deserts & Xeric Shrublands": [
+        [
+            "Afghan Mountains semi-desert",
+            "Palearctic"
+        ],
+        [
+            "Alashan Plateau semi-desert",
+            "Palearctic"
+        ],
+        [
+            "Aldabra Island xeric scrub",
+            "Afrotropic"
+        ],
+        [
+            "Arabian sand desert",
+            "Palearctic"
+        ],
+        [
+            "Araya and Paria xeric scrub",
+            "Neotropic"
+        ],
+        [
+            "Atacama desert",
+            "Neotropic"
+        ],
+        [
+            "Saharan Atlantic coastal desert",
+            "Palearctic"
+        ],
+        [
+            "Azerbaijan shrub desert and steppe",
+            "Palearctic"
+        ],
+        [
+            "Badghyz and Karabil semi-desert",
+            "Palearctic"
+        ],
+        [
+            "Baja California desert",
+            "Nearctic"
+        ],
+        [
+            "Baluchistan xeric woodlands",
+            "Palearctic"
+        ],
+        [
+            "Caribbean shrublands",
+            "Neotropic"
+        ],
+        [
+            "Carnarvon xeric shrublands",
+            "Australasia"
+        ],
+        [
+            "Caspian lowland desert",
+            "Palearctic"
+        ],
+        [
+            "Central Afghan Mountains xeric woodlands",
+            "Palearctic"
+        ],
+        [
+            "Central Asian northern desert",
+            "Palearctic"
+        ],
+        [
+            "Central Asian riparian woodlands",
+            "Palearctic"
+        ],
+        [
+            "Central Asian southern desert",
+            "Palearctic"
+        ],
+        [
+            "Central Mexican matorral",
+            "Nearctic"
+        ],
+        [
+            "Central Persian desert basins",
+            "Palearctic"
+        ],
+        [
+            "Central Ranges xeric scrub",
+            "Australasia"
+        ],
+        [
+            "Chihuahuan desert",
+            "Nearctic"
+        ],
+        [
+            "Colorado Plateau shrublands",
+            "Nearctic"
+        ],
+        [
+            "Cuban cactus scrub",
+            "Neotropic"
+        ],
+        [
+            "Deccan thorn scrub forests",
+            "Indomalayan"
+        ],
+        [
+            "Djibouti xeric shrublands",
+            "Afrotropic"
+        ],
+        [
+            "East Arabian fog shrublands and sand desert",
+            "Palearctic"
+        ],
+        [
+            "East Sahara Desert",
+            "Palearctic"
+        ],
+        [
+            "East Saharan montane xeric woodlands",
+            "Palearctic"
+        ],
+        [
+            "Eastern Gobi desert steppe",
+            "Palearctic"
+        ],
+        [
+            "Eritrean coastal desert",
+            "Afrotropic"
+        ],
+        [
+            "Gal\u00e1pagos Islands xeric scrub",
+            "Neotropic"
+        ],
+        [
+            "Gariep Karoo",
+            "Afrotropic"
+        ],
+        [
+            "Gibson desert",
+            "Australasia"
+        ],
+        [
+            "Godavari-Krishna mangroves",
+            "Indomalayan"
+        ],
+        [
+            "Gobi Lakes Valley desert steppe",
+            "Palearctic"
+        ],
+        [
+            "Great Basin shrub steppe",
+            "Nearctic"
+        ],
+        [
+            "Great Lakes Basin desert steppe",
+            "Palearctic"
+        ],
+        [
+            "Great Sandy-Tanami desert",
+            "Australasia"
+        ],
+        [
+            "Great Victoria desert",
+            "Australasia"
+        ],
+        [
+            "Guajira-Barranquilla xeric scrub",
+            "Neotropic"
+        ],
+        [
+            "Gulf of California xeric scrub",
+            "Nearctic"
+        ],
+        [
+            "Hobyo grasslands and shrublands",
+            "Afrotropic"
+        ],
+        [
+            "Indus Valley desert",
+            "Indomalayan"
+        ],
+        [
+            "Junggar Basin semi-desert",
+            "Palearctic"
+        ],
+        [
+            "Kalahari xeric savanna",
+            "Afrotropic"
+        ],
+        [
+            "Kaokoveld desert",
+            "Afrotropic"
+        ],
+        [
+            "Kazakh semi-desert",
+            "Palearctic"
+        ],
+        [
+            "Kopet Dag semi-desert",
+            "Palearctic"
+        ],
+        [
+            "La Costa xeric shrublands",
+            "Neotropic"
+        ],
+        [
+            "Madagascar spiny thickets",
+            "Afrotropic"
+        ],
+        [
+            "Madagascar succulent woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Malpelo Island xeric scrub",
+            "Neotropic"
+        ],
+        [
+            "Meseta Central matorral",
+            "Nearctic"
+        ],
+        [
+            "Mesopotamian shrub desert",
+            "Palearctic"
+        ],
+        [
+            "Mojave desert",
+            "Nearctic"
+        ],
+        [
+            "Motagua Valley thornscrub",
+            "Neotropic"
+        ],
+        [
+            "Nama Karoo shrublands",
+            "Afrotropic"
+        ],
+        [
+            "Namaqualand-Richtersveld steppe",
+            "Afrotropic"
+        ],
+        [
+            "Namib Desert",
+            "Afrotropic"
+        ],
+        [
+            "Namibian savanna woodlands",
+            "Afrotropic"
+        ],
+        [
+            "North Arabian desert",
+            "Palearctic"
+        ],
+        [
+            "North Arabian highland shrublands",
+            "Palearctic"
+        ],
+        [
+            "North Saharan Xeric Steppe and Woodland",
+            "Palearctic"
+        ],
+        [
+            "Somali montane xeric woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Aravalli west thorn scrub forests",
+            "Indomalayan"
+        ],
+        [
+            "Nullarbor Plains xeric shrublands",
+            "Australasia"
+        ],
+        [
+            "Paraguan\u00e1 xeric scrub",
+            "Neotropic"
+        ],
+        [
+            "Paropamisus xeric woodlands",
+            "Palearctic"
+        ],
+        [
+            "Pilbara shrublands",
+            "Australasia"
+        ],
+        [
+            "Qaidam Basin semi-desert",
+            "Palearctic"
+        ],
+        [
+            "Red Sea-Arabian Desert shrublands",
+            "Palearctic"
+        ],
+        [
+            "Red Sea coastal desert",
+            "Palearctic"
+        ],
+        [
+            "Registan-North Pakistan sandy desert",
+            "Palearctic"
+        ],
+        [
+            "San Lucan xeric scrub",
+            "Neotropic"
+        ],
+        [
+            "Sechura desert",
+            "Neotropic"
+        ],
+        [
+            "Simpson desert",
+            "Australasia"
+        ],
+        [
+            "Snake-Columbia shrub steppe",
+            "Nearctic"
+        ],
+        [
+            "Socotra Island xeric shrublands",
+            "Afrotropic"
+        ],
+        [
+            "Sonoran desert",
+            "Nearctic"
+        ],
+        [
+            "South Iran Nubo-Sindian desert and semi-desert",
+            "Palearctic"
+        ],
+        [
+            "South Sahara desert",
+            "Palearctic"
+        ],
+        [
+            "Southwest Arabian Escarpment shrublands and woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Southwest Arabian highland xeric scrub",
+            "Afrotropic"
+        ],
+        [
+            "St. Peter and St. Paul Rocks",
+            "Neotropic"
+        ],
+        [
+            "Succulent Karoo xeric shrublands",
+            "Afrotropic"
+        ],
+        [
+            "Taklimakan desert",
+            "Palearctic"
+        ],
+        [
+            "Tamaulipan matorral",
+            "Nearctic"
+        ],
+        [
+            "Tamaulipan mezquital",
+            "Nearctic"
+        ],
+        [
+            "Tehuac\u00e1n Valley matorral",
+            "Neotropic"
+        ],
+        [
+            "Thar desert",
+            "Indomalayan"
+        ],
+        [
+            "Tibesti-Jebel Uweinat montane xeric woodlands",
+            "Palearctic"
+        ],
+        [
+            "Tirari-Sturt stony desert",
+            "Australasia"
+        ],
+        [
+            "West Sahara desert",
+            "Palearctic"
+        ],
+        [
+            "West Saharan montane xeric woodlands",
+            "Palearctic"
+        ],
+        [
+            "Western Australian Mulga shrublands",
+            "Australasia"
+        ],
+        [
+            "Wyoming Basin shrub steppe",
+            "Nearctic"
+        ],
+        [
+            "Southwest Arabian coastal xeric shrublands",
+            "Afrotropic"
+        ],
+        [
+            "Arabian-Persian Gulf coastal plain desert",
+            "Palearctic"
+        ],
+        [
+            "South Arabian plains and plateau desert",
+            "Palearctic"
+        ],
+        [
+            "Arabian desert",
+            "Palearctic"
+        ],
+        [
+            "Ile Europa and Bassas da India xeric scrub",
+            "Afrotropic"
+        ]
+    ],
+    "Temperate Grasslands, Savannas & Shrublands": [
+        [
+            "Al-Hajar foothill xeric woodlands and shrublands",
+            "Palearctic"
+        ],
+        [
+            "Al-Hajar montane woodlands and shrublands",
+            "Palearctic"
+        ],
+        [
+            "Alai-Western Tian Shan steppe",
+            "Palearctic"
+        ],
+        [
+            "Altai steppe and semi-desert",
+            "Palearctic"
+        ],
+        [
+            "Amsterdam-Saint Paul Islands temperate grasslands",
+            "Afrotropic"
+        ],
+        [
+            "California Central Valley grasslands",
+            "Nearctic"
+        ],
+        [
+            "Canadian Aspen forests and parklands",
+            "Nearctic"
+        ],
+        [
+            "Canterbury-Otago tussock grasslands",
+            "Australasia"
+        ],
+        [
+            "Central Anatolian steppe",
+            "Palearctic"
+        ],
+        [
+            "Central-Southern US mixed grasslands",
+            "Nearctic"
+        ],
+        [
+            "Central US forest-grasslands transition",
+            "Nearctic"
+        ],
+        [
+            "Central Tallgrass prairie",
+            "Nearctic"
+        ],
+        [
+            "Cross-Timbers savanna-woodland",
+            "Nearctic"
+        ],
+        [
+            "Daurian forest steppe",
+            "Palearctic"
+        ],
+        [
+            "Eastern Anatolian montane steppe",
+            "Palearctic"
+        ],
+        [
+            "Eastern Australia mulga shrublands",
+            "Australasia"
+        ],
+        [
+            "Edwards Plateau savanna",
+            "Nearctic"
+        ],
+        [
+            "Emin Valley steppe",
+            "Palearctic"
+        ],
+        [
+            "Espinal",
+            "Neotropic"
+        ],
+        [
+            "Faroe Islands boreal grasslands",
+            "Palearctic"
+        ],
+        [
+            "Flint Hills tallgrass prairie",
+            "Nearctic"
+        ],
+        [
+            "Gissaro-Alai open woodlands",
+            "Palearctic"
+        ],
+        [
+            "Humid Pampas",
+            "Neotropic"
+        ],
+        [
+            "Kazakh forest steppe",
+            "Palearctic"
+        ],
+        [
+            "Kazakh steppe",
+            "Palearctic"
+        ],
+        [
+            "Kazakh upland steppe",
+            "Palearctic"
+        ],
+        [
+            "Low Monte",
+            "Neotropic"
+        ],
+        [
+            "Mid-Atlantic US coastal savannas",
+            "Nearctic"
+        ],
+        [
+            "Mongolian-Manchurian grassland",
+            "Palearctic"
+        ],
+        [
+            "Montana Valley and Foothill grasslands",
+            "Nearctic"
+        ],
+        [
+            "Nebraska Sand Hills mixed grasslands",
+            "Nearctic"
+        ],
+        [
+            "Northern Shortgrass prairie",
+            "Nearctic"
+        ],
+        [
+            "Northern Tallgrass prairie",
+            "Nearctic"
+        ],
+        [
+            "Palouse prairie",
+            "Nearctic"
+        ],
+        [
+            "Patagonian steppe",
+            "Neotropic"
+        ],
+        [
+            "Pontic steppe",
+            "Palearctic"
+        ],
+        [
+            "Sayan Intermontane steppe",
+            "Palearctic"
+        ],
+        [
+            "Selenge-Orkhon forest steppe",
+            "Palearctic"
+        ],
+        [
+            "South Siberian forest steppe",
+            "Palearctic"
+        ],
+        [
+            "Southeast Australia temperate savanna",
+            "Australasia"
+        ],
+        [
+            "Southeast US mixed woodlands and savannas",
+            "Nearctic"
+        ],
+        [
+            "Southeast US conifer savannas",
+            "Nearctic"
+        ],
+        [
+            "Syrian xeric grasslands and shrublands",
+            "Palearctic"
+        ],
+        [
+            "Texas blackland prairies",
+            "Nearctic"
+        ],
+        [
+            "Tian Shan foothill arid steppe",
+            "Palearctic"
+        ],
+        [
+            "Tristan Da Cunha-Gough Islands shrub and grasslands",
+            "Afrotropic"
+        ],
+        [
+            "Western shortgrass prairie",
+            "Nearctic"
+        ],
+        [
+            "Willamette Valley oak savanna",
+            "Nearctic"
+        ]
+    ],
+    "Boreal Forests/Taiga": [
+        [
+            "Alaska Peninsula montane taiga",
+            "Nearctic"
+        ],
+        [
+            "Central Canadian Shield forests",
+            "Nearctic"
+        ],
+        [
+            "Cook Inlet taiga",
+            "Nearctic"
+        ],
+        [
+            "Copper Plateau taiga",
+            "Nearctic"
+        ],
+        [
+            "East Siberian taiga",
+            "Palearctic"
+        ],
+        [
+            "Eastern Canadian forests",
+            "Nearctic"
+        ],
+        [
+            "Eastern Canadian Shield taiga",
+            "Nearctic"
+        ],
+        [
+            "Iceland boreal birch forests and alpine tundra",
+            "Palearctic"
+        ],
+        [
+            "Interior Alaska-Yukon lowland taiga",
+            "Nearctic"
+        ],
+        [
+            "Kamchatka-Kurile meadows and sparse forests",
+            "Palearctic"
+        ],
+        [
+            "Kamchatka taiga",
+            "Palearctic"
+        ],
+        [
+            "Mid-Canada Boreal Plains forests",
+            "Nearctic"
+        ],
+        [
+            "Midwest Canadian Shield forests",
+            "Nearctic"
+        ],
+        [
+            "Muskwa-Slave Lake taiga",
+            "Nearctic"
+        ],
+        [
+            "Northeast Siberian taiga",
+            "Palearctic"
+        ],
+        [
+            "Northern Canadian Shield taiga",
+            "Nearctic"
+        ],
+        [
+            "Okhotsk-Manchurian taiga",
+            "Palearctic"
+        ],
+        [
+            "Sakhalin Island taiga",
+            "Palearctic"
+        ],
+        [
+            "Scandinavian and Russian taiga",
+            "Palearctic"
+        ],
+        [
+            "Southern Hudson Bay taiga",
+            "Nearctic"
+        ],
+        [
+            "Trans-Baikal conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Urals montane forest and taiga",
+            "Palearctic"
+        ],
+        [
+            "Watson Highlands taiga",
+            "Nearctic"
+        ],
+        [
+            "West Siberian taiga",
+            "Palearctic"
+        ],
+        [
+            "Northern Cordillera forests",
+            "Nearctic"
+        ],
+        [
+            "Northwest Territories taiga",
+            "Nearctic"
+        ]
+    ],
+    "Temperate Conifer Forests": [
+        [
+            "Alberta-British Columbia foothills forests",
+            "Nearctic"
+        ],
+        [
+            "Alps conifer and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Altai montane forest and forest steppe",
+            "Palearctic"
+        ],
+        [
+            "Arizona Mountains forests",
+            "Nearctic"
+        ],
+        [
+            "Atlantic coastal pine barrens",
+            "Nearctic"
+        ],
+        [
+            "Blue Mountains forests",
+            "Nearctic"
+        ],
+        [
+            "British Columbia coastal conifer forests",
+            "Nearctic"
+        ],
+        [
+            "Caledon conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Carpathian montane forests",
+            "Palearctic"
+        ],
+        [
+            "Central-Southern Cascades Forests",
+            "Nearctic"
+        ],
+        [
+            "Central British Columbia Mountain forests",
+            "Nearctic"
+        ],
+        [
+            "Central Pacific Northwest coastal forests",
+            "Nearctic"
+        ],
+        [
+            "Colorado Rockies forests",
+            "Nearctic"
+        ],
+        [
+            "Da Hinggan-Dzhagdy Mountains conifer forests",
+            "Palearctic"
+        ],
+        [
+            "East Afghan montane conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Eastern Cascades forests",
+            "Nearctic"
+        ],
+        [
+            "Eastern Himalayan subalpine conifer forests",
+            "Indomalayan"
+        ],
+        [
+            "Elburz Range forest steppe",
+            "Palearctic"
+        ],
+        [
+            "Fraser Plateau and Basin conifer forests",
+            "Nearctic"
+        ],
+        [
+            "Great Basin montane forests",
+            "Nearctic"
+        ],
+        [
+            "Helanshan montane conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Hengduan Mountains subalpine conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Hokkaido montane conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Honshu alpine conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Khangai Mountains conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Klamath-Siskiyou forests",
+            "Nearctic"
+        ],
+        [
+            "Mediterranean conifer and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Northeast Himalayan subalpine conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Northern Anatolian conifer and deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Northern California coastal forests",
+            "Nearctic"
+        ],
+        [
+            "Nujiang Langcang Gorge alpine conifer and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Okanogan dry forests",
+            "Nearctic"
+        ],
+        [
+            "Piney Woods",
+            "Nearctic"
+        ],
+        [
+            "Puget lowland forests",
+            "Nearctic"
+        ],
+        [
+            "Qilian Mountains conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Qionglai-Minshan conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Sayan montane conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Scandinavian coastal conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Sierra Nevada forests",
+            "Nearctic"
+        ],
+        [
+            "South Central Rockies forests",
+            "Nearctic"
+        ],
+        [
+            "Tian Shan montane conifer forests",
+            "Palearctic"
+        ],
+        [
+            "Wasatch and Uinta montane forests",
+            "Nearctic"
+        ],
+        [
+            "Western Himalayan subalpine conifer forests",
+            "Indomalayan"
+        ],
+        [
+            "Queen Charlotte Islands conifer forests",
+            "Nearctic"
+        ],
+        [
+            "Northern Pacific Alaskan coastal forests",
+            "Nearctic"
+        ],
+        [
+            "North Cascades conifer forests",
+            "Nearctic"
+        ],
+        [
+            "Northern Rockies conifer forests",
+            "Nearctic"
+        ]
+    ],
+    "Temperate Broadleaf & Mixed Forests": [
+        [
+            "Allegheny Highlands forests",
+            "Nearctic"
+        ],
+        [
+            "Appalachian-Blue Ridge forests",
+            "Nearctic"
+        ],
+        [
+            "Appalachian mixed mesophytic forests",
+            "Nearctic"
+        ],
+        [
+            "Appalachian Piedmont forests",
+            "Nearctic"
+        ],
+        [
+            "Appenine deciduous montane forests",
+            "Palearctic"
+        ],
+        [
+            "European Atlantic mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Azores temperate mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Balkan mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Baltic mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Cantabrian mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Caspian Hyrcanian mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Caucasus mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Celtic broadleaf forests",
+            "Palearctic"
+        ],
+        [
+            "Central Anatolian steppe and woodlands",
+            "Palearctic"
+        ],
+        [
+            "Central China Loess Plateau mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Central European mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Central Korean deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Changbai Mountains mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Changjiang Plain evergreen forests",
+            "Palearctic"
+        ],
+        [
+            "Chatham Island temperate forests",
+            "Australasia"
+        ],
+        [
+            "Crimean Submediterranean forest complex",
+            "Palearctic"
+        ],
+        [
+            "Daba Mountains evergreen forests",
+            "Palearctic"
+        ],
+        [
+            "Dinaric Mountains mixed forests",
+            "Palearctic"
+        ],
+        [
+            "East Central Texas forests",
+            "Nearctic"
+        ],
+        [
+            "East European forest steppe",
+            "Palearctic"
+        ],
+        [
+            "Eastern Anatolian deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Eastern Australian temperate forests",
+            "Australasia"
+        ],
+        [
+            "Eastern Canadian Forest-Boreal transition",
+            "Nearctic"
+        ],
+        [
+            "Eastern Great Lakes lowland forests",
+            "Nearctic"
+        ],
+        [
+            "Eastern Himalayan broadleaf forests",
+            "Indomalayan"
+        ],
+        [
+            "English Lowlands beech forests",
+            "Palearctic"
+        ],
+        [
+            "Euxine-Colchic broadleaf forests",
+            "Palearctic"
+        ],
+        [
+            "Fiordland temperate forests",
+            "Australasia"
+        ],
+        [
+            "Gulf of St. Lawrence lowland forests",
+            "Nearctic"
+        ],
+        [
+            "Hokkaido deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Huang He Plain mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Interior Plateau US Hardwood Forests",
+            "Nearctic"
+        ],
+        [
+            "Juan Fern\u00e1ndez Islands temperate forests",
+            "Neotropic"
+        ],
+        [
+            "Madeira evergreen forests",
+            "Palearctic"
+        ],
+        [
+            "Magellanic subpolar forests",
+            "Neotropic"
+        ],
+        [
+            "Manchurian mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Mississippi lowland forests",
+            "Nearctic"
+        ],
+        [
+            "Nelson Coast temperate forests",
+            "Australasia"
+        ],
+        [
+            "New England-Acadian forests",
+            "Nearctic"
+        ],
+        [
+            "Nihonkai evergreen forests",
+            "Palearctic"
+        ],
+        [
+            "Nihonkai montane deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "New Zealand North Island temperate forests",
+            "Australasia"
+        ],
+        [
+            "Northeast China Plain deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Northeast US Coastal forests",
+            "Nearctic"
+        ],
+        [
+            "Northern Triangle temperate forests",
+            "Indomalayan"
+        ],
+        [
+            "Northland temperate kauri forests",
+            "Australasia"
+        ],
+        [
+            "Ozark Highlands mixed forests",
+            "Nearctic"
+        ],
+        [
+            "Ozark Mountain forests",
+            "Nearctic"
+        ],
+        [
+            "Pannonian mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Po Basin mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Pyrenees conifer and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Qin Ling Mountains deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Rakiura Island temperate forests",
+            "Australasia"
+        ],
+        [
+            "Richmond temperate forests",
+            "Australasia"
+        ],
+        [
+            "Rodope montane mixed forests",
+            "Palearctic"
+        ],
+        [
+            "San F\u00e9lix-San Ambrosio Islands temperate forests",
+            "Neotropic"
+        ],
+        [
+            "Sarmatic mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Sichuan Basin evergreen broadleaf forests",
+            "Palearctic"
+        ],
+        [
+            "New Zealand South Island temperate forests",
+            "Australasia"
+        ],
+        [
+            "Southeast Australia temperate forests",
+            "Australasia"
+        ],
+        [
+            "Southern Great Lakes forests",
+            "Nearctic"
+        ],
+        [
+            "Southern Korea evergreen forests",
+            "Palearctic"
+        ],
+        [
+            "Taiheiyo evergreen forests",
+            "Palearctic"
+        ],
+        [
+            "Taiheiyo montane deciduous forests",
+            "Palearctic"
+        ],
+        [
+            "Tarim Basin deciduous forests and steppe",
+            "Palearctic"
+        ],
+        [
+            "Tasmanian Central Highland forests",
+            "Australasia"
+        ],
+        [
+            "Tasmanian temperate forests",
+            "Australasia"
+        ],
+        [
+            "Tasmanian temperate rain forests",
+            "Australasia"
+        ],
+        [
+            "Upper Midwest US forest-savanna transition",
+            "Nearctic"
+        ],
+        [
+            "Ussuri broadleaf and mixed forests",
+            "Palearctic"
+        ],
+        [
+            "Valdivian temperate forests",
+            "Neotropic"
+        ],
+        [
+            "Western European broadleaf forests",
+            "Palearctic"
+        ],
+        [
+            "Western Great Lakes forests",
+            "Nearctic"
+        ],
+        [
+            "Western Himalayan broadleaf forests",
+            "Indomalayan"
+        ],
+        [
+            "Western Siberian hemiboreal forests",
+            "Palearctic"
+        ],
+        [
+            "Westland temperate forests",
+            "Australasia"
+        ],
+        [
+            "Zagros Mountains forest steppe",
+            "Palearctic"
+        ],
+        [
+            "North Atlantic moist mixed forests",
+            "Palearctic"
+        ]
+    ],
+    "Montane Grasslands & Shrublands": [
+        [
+            "Altai alpine meadow and tundra",
+            "Palearctic"
+        ],
+        [
+            "Angolan montane forest-grassland",
+            "Afrotropic"
+        ],
+        [
+            "Australian Alps montane grasslands",
+            "Australasia"
+        ],
+        [
+            "Central Andean dry puna",
+            "Neotropic"
+        ],
+        [
+            "Central Andean puna",
+            "Neotropic"
+        ],
+        [
+            "Central Andean wet puna",
+            "Neotropic"
+        ],
+        [
+            "Papuan Central Range sub-alpine grasslands",
+            "Australasia"
+        ],
+        [
+            "Central Tibetan Plateau alpine steppe",
+            "Palearctic"
+        ],
+        [
+            "Cordillera Central p\u00e1ramo",
+            "Neotropic"
+        ],
+        [
+            "Cordillera de Merida p\u00e1ramo",
+            "Neotropic"
+        ],
+        [
+            "Eastern Himalayan alpine shrub and meadows",
+            "Palearctic"
+        ],
+        [
+            "Ethiopian montane grasslands and woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Ethiopian montane moorlands",
+            "Afrotropic"
+        ],
+        [
+            "Ghorat-Hazarajat alpine meadow",
+            "Palearctic"
+        ],
+        [
+            "High Monte",
+            "Neotropic"
+        ],
+        [
+            "Highveld grasslands",
+            "Afrotropic"
+        ],
+        [
+            "Hindu Kush alpine meadow",
+            "Palearctic"
+        ],
+        [
+            "Jos Plateau forest-grassland",
+            "Afrotropic"
+        ],
+        [
+            "Karakoram-West Tibetan Plateau alpine steppe",
+            "Palearctic"
+        ],
+        [
+            "Khangai Mountains alpine meadow",
+            "Palearctic"
+        ],
+        [
+            "Kopet Dag woodlands and forest steppe",
+            "Palearctic"
+        ],
+        [
+            "Kuh Rud and Eastern Iran montane woodlands",
+            "Palearctic"
+        ],
+        [
+            "Madagascar ericoid thickets",
+            "Afrotropic"
+        ],
+        [
+            "Mediterranean High Atlas juniper steppe",
+            "Palearctic"
+        ],
+        [
+            "Mulanje Montane forest-grassland",
+            "Afrotropic"
+        ],
+        [
+            "North Tibetan Plateau-Kunlun Mountains alpine desert",
+            "Palearctic"
+        ],
+        [
+            "Northern Andean p\u00e1ramo",
+            "Neotropic"
+        ],
+        [
+            "Northwestern Himalayan alpine shrub and meadows",
+            "Palearctic"
+        ],
+        [
+            "Nyanga-Chimanimani Montane forest-grassland",
+            "Afrotropic"
+        ],
+        [
+            "Ordos Plateau steppe",
+            "Palearctic"
+        ],
+        [
+            "Pamir alpine desert and tundra",
+            "Palearctic"
+        ],
+        [
+            "Qilian Mountains subalpine meadows",
+            "Palearctic"
+        ],
+        [
+            "Rwenzori-Virunga montane moorlands",
+            "Afrotropic"
+        ],
+        [
+            "Santa Marta p\u00e1ramo",
+            "Neotropic"
+        ],
+        [
+            "Sayan alpine meadows and tundra",
+            "Palearctic"
+        ],
+        [
+            "New Zealand South Island montane grasslands",
+            "Australasia"
+        ],
+        [
+            "Southeast Tibet shrublands and meadows",
+            "Palearctic"
+        ],
+        [
+            "Southern Andean steppe",
+            "Neotropic"
+        ],
+        [
+            "Southern Rift Montane forest-grassland",
+            "Afrotropic"
+        ],
+        [
+            "Sulaiman Range alpine meadows",
+            "Palearctic"
+        ],
+        [
+            "Tian Shan montane steppe and meadows",
+            "Palearctic"
+        ],
+        [
+            "Tibetan Plateau alpine shrublands and meadows",
+            "Palearctic"
+        ],
+        [
+            "Western Himalayan alpine shrub and meadows",
+            "Palearctic"
+        ],
+        [
+            "Yarlung Zanbo arid steppe",
+            "Palearctic"
+        ],
+        [
+            "East African montane moorlands",
+            "Afrotropic"
+        ],
+        [
+            "Kinabalu montane alpine meadows",
+            "Indomalayan"
+        ]
+    ],
+    "Mangroves": [
+        [
+            "Amazon-Orinoco-Southern Caribbean mangroves",
+            "Neotropic"
+        ],
+        [
+            "Bahamian-Antillean mangroves",
+            "Neotropic"
+        ],
+        [
+            "Central African mangroves",
+            "Afrotropic"
+        ],
+        [
+            "East African mangroves",
+            "Afrotropic"
+        ],
+        [
+            "Guinean mangroves",
+            "Afrotropic"
+        ],
+        [
+            "Indochina mangroves",
+            "Indomalayan"
+        ],
+        [
+            "Indus River Delta-Arabian Sea mangroves",
+            "Indomalayan"
+        ],
+        [
+            "Madagascar mangroves",
+            "Afrotropic"
+        ],
+        [
+            "Mesoamerican Gulf-Caribbean mangroves",
+            "Neotropic"
+        ],
+        [
+            "Myanmar Coast mangroves",
+            "Indomalayan"
+        ],
+        [
+            "New Guinea mangroves",
+            "Australasia"
+        ],
+        [
+            "Northern Mesoamerican Pacific mangroves",
+            "Neotropic"
+        ],
+        [
+            "Red Sea mangroves",
+            "Afrotropic"
+        ],
+        [
+            "South American Pacific mangroves",
+            "Neotropic"
+        ],
+        [
+            "Southern Africa mangroves",
+            "Afrotropic"
+        ],
+        [
+            "Southern Atlantic Brazilian mangroves",
+            "Neotropic"
+        ],
+        [
+            "Southern Mesoamerican Pacific mangroves",
+            "Neotropic"
+        ],
+        [
+            "Sunda Shelf mangroves",
+            "Indomalayan"
+        ],
+        [
+            "Sundarbans mangroves",
+            "Indomalayan"
+        ]
+    ],
+    "Flooded Grasslands & Savannas": [
+        [
+            "Amur meadow steppe",
+            "Palearctic"
+        ],
+        [
+            "Bohai Sea saline meadow",
+            "Palearctic"
+        ],
+        [
+            "Cuban wetlands",
+            "Neotropic"
+        ],
+        [
+            "East African halophytics",
+            "Afrotropic"
+        ],
+        [
+            "Enriquillo wetlands",
+            "Neotropic"
+        ],
+        [
+            "Etosha Pan halophytics",
+            "Afrotropic"
+        ],
+        [
+            "Everglades flooded grasslands",
+            "Neotropic"
+        ],
+        [
+            "Guayaquil flooded grasslands",
+            "Neotropic"
+        ],
+        [
+            "Inner Niger Delta flooded savanna",
+            "Afrotropic"
+        ],
+        [
+            "Lake Chad flooded savanna",
+            "Afrotropic"
+        ],
+        [
+            "Makgadikgadi halophytics",
+            "Afrotropic"
+        ],
+        [
+            "Nenjiang River grassland",
+            "Palearctic"
+        ],
+        [
+            "Nile Delta flooded savanna",
+            "Palearctic"
+        ],
+        [
+            "Orinoco wetlands",
+            "Neotropic"
+        ],
+        [
+            "Pantanal",
+            "Neotropic"
+        ],
+        [
+            "Paran\u00e1 flooded savanna",
+            "Neotropic"
+        ],
+        [
+            "Rann of Kutch seasonal salt marsh",
+            "Indomalayan"
+        ],
+        [
+            "Saharan halophytics",
+            "Palearctic"
+        ],
+        [
+            "Southern Cone Mesopotamian savanna",
+            "Neotropic"
+        ],
+        [
+            "Sudd flooded grasslands",
+            "Afrotropic"
+        ],
+        [
+            "Suiphun-Khanka meadows and forest meadows",
+            "Palearctic"
+        ],
+        [
+            "Tigris-Euphrates alluvial salt marsh",
+            "Palearctic"
+        ],
+        [
+            "Yellow Sea saline meadow",
+            "Palearctic"
+        ],
+        [
+            "Zambezian coastal flooded savanna",
+            "Afrotropic"
+        ],
+        [
+            "Zambezian flooded grasslands",
+            "Afrotropic"
+        ]
+    ],
+    "Tropical & Subtropical Grasslands, Savannas & Shrublands": [
+        [
+            "Angolan mopane woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Angolan scarp savanna and woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Angolan wet miombo woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Arnhem Land tropical savanna",
+            "Australasia"
+        ],
+        [
+            "Ascension scrub and grasslands",
+            "Afrotropic"
+        ],
+        [
+            "Belizian pine savannas",
+            "Neotropic"
+        ],
+        [
+            "Beni savanna",
+            "Neotropic"
+        ],
+        [
+            "Brigalow tropical savanna",
+            "Australasia"
+        ],
+        [
+            "Campos Rupestres montane savanna",
+            "Neotropic"
+        ],
+        [
+            "Cape York Peninsula tropical savanna",
+            "Australasia"
+        ],
+        [
+            "Carpentaria tropical savanna",
+            "Australasia"
+        ],
+        [
+            "Central bushveld",
+            "Afrotropic"
+        ],
+        [
+            "Central Zambezian wet miombo woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Cerrado",
+            "Neotropic"
+        ],
+        [
+            "Clipperton Island shrub and grasslands",
+            "Neotropic"
+        ],
+        [
+            "Drakensberg Escarpment savanna and thicket",
+            "Afrotropic"
+        ],
+        [
+            "Drakensberg grasslands",
+            "Afrotropic"
+        ],
+        [
+            "Dry Chaco",
+            "Neotropic"
+        ],
+        [
+            "East Sudanian savanna",
+            "Afrotropic"
+        ],
+        [
+            "Einasleigh upland savanna",
+            "Australasia"
+        ],
+        [
+            "Guianan savanna",
+            "Neotropic"
+        ],
+        [
+            "Guinean forest-savanna",
+            "Afrotropic"
+        ],
+        [
+            "Hawai'i tropical high shrublands",
+            "Oceania"
+        ],
+        [
+            "Hawai'i tropical low shrublands",
+            "Oceania"
+        ],
+        [
+            "Horn of Africa xeric bushlands",
+            "Afrotropic"
+        ],
+        [
+            "Humid Chaco",
+            "Neotropic"
+        ],
+        [
+            "Itigi-Sumbu thicket",
+            "Afrotropic"
+        ],
+        [
+            "Kalahari Acacia woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Kimberly tropical savanna",
+            "Australasia"
+        ],
+        [
+            "Limpopo lowveld",
+            "Afrotropic"
+        ],
+        [
+            "Llanos",
+            "Neotropic"
+        ],
+        [
+            "Mandara Plateau woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Masai xeric grasslands and shrublands",
+            "Afrotropic"
+        ],
+        [
+            "Miskito pine forests",
+            "Neotropic"
+        ],
+        [
+            "Mitchell Grass Downs",
+            "Australasia"
+        ],
+        [
+            "Northern Acacia-Commiphora bushlands and thickets",
+            "Afrotropic"
+        ],
+        [
+            "Northern Congolian Forest-Savanna",
+            "Afrotropic"
+        ],
+        [
+            "Northwest Hawai'i scrub",
+            "Oceania"
+        ],
+        [
+            "Sahelian Acacia savanna",
+            "Afrotropic"
+        ],
+        [
+            "Serengeti volcanic grasslands",
+            "Afrotropic"
+        ],
+        [
+            "Somali Acacia-Commiphora bushlands and thickets",
+            "Afrotropic"
+        ],
+        [
+            "Southern Acacia-Commiphora bushlands and thickets",
+            "Afrotropic"
+        ],
+        [
+            "Southern Congolian forest-savanna",
+            "Afrotropic"
+        ],
+        [
+            "Terai-Duar savanna and grasslands",
+            "Indomalayan"
+        ],
+        [
+            "Trans Fly savanna and grasslands",
+            "Australasia"
+        ],
+        [
+            "Uruguayan savanna",
+            "Neotropic"
+        ],
+        [
+            "Victoria Plains tropical savanna",
+            "Australasia"
+        ],
+        [
+            "West Sudanian savanna",
+            "Afrotropic"
+        ],
+        [
+            "Western Gulf coastal grasslands",
+            "Nearctic"
+        ],
+        [
+            "Zambezian-Limpopo mixed woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Zambezian Baikiaea woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Dry miombo woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Zambezian mopane woodlands",
+            "Afrotropic"
+        ],
+        [
+            "St. Helena scrub and woodlands",
+            "Afrotropic"
+        ],
+        [
+            "Victoria Basin forest-savanna",
+            "Afrotropic"
+        ],
+        [
+            "Western Congolian forest-savanna",
+            "Afrotropic"
+        ],
+        [
+            "Southwest Arabian montane woodlands and grasslands",
+            "Afrotropic"
+        ],
+        [
+            "South Arabian fog woodlands, shrublands, and dune",
+            "Afrotropic"
+        ]
+    ],
+    "Tropical & Subtropical Dry Broadleaf Forests": [
+        [
+            "Apure-Villavicencio dry forests",
+            "Neotropic"
+        ],
+        [
+            "Baj\u00edo dry forests",
+            "Neotropic"
+        ],
+        [
+            "Balsas dry forests",
+            "Neotropic"
+        ],
+        [
+            "Bolivian montane dry forests",
+            "Neotropic"
+        ],
+        [
+            "Caatinga",
+            "Neotropic"
+        ],
+        [
+            "Cape Verde Islands dry forests",
+            "Afrotropic"
+        ],
+        [
+            "Cauca Valley dry forests",
+            "Neotropic"
+        ],
+        [
+            "Central American dry forests",
+            "Neotropic"
+        ],
+        [
+            "Central Deccan Plateau dry deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Central Indochina dry forests",
+            "Indomalayan"
+        ],
+        [
+            "Chhota-Nagpur dry deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Chiapas Depression dry forests",
+            "Neotropic"
+        ],
+        [
+            "Chiquitano dry forests",
+            "Neotropic"
+        ],
+        [
+            "Cuban dry forests",
+            "Neotropic"
+        ],
+        [
+            "East Deccan dry-evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "Ecuadorian dry forests",
+            "Neotropic"
+        ],
+        [
+            "Fiji tropical dry forests",
+            "Oceania"
+        ],
+        [
+            "Hawai'i tropical dry forests",
+            "Oceania"
+        ],
+        [
+            "Hispaniolan dry forests",
+            "Neotropic"
+        ],
+        [
+            "Irrawaddy dry forests",
+            "Indomalayan"
+        ],
+        [
+            "Islas Revillagigedo dry forests",
+            "Neotropic"
+        ],
+        [
+            "Jalisco dry forests",
+            "Neotropic"
+        ],
+        [
+            "Jamaican dry forests",
+            "Neotropic"
+        ],
+        [
+            "Khathiar-Gir dry deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Lara-Falc\u00f3n dry forests",
+            "Neotropic"
+        ],
+        [
+            "Lesser Sundas deciduous forests",
+            "Australasia"
+        ],
+        [
+            "Madagascar dry deciduous forests",
+            "Afrotropic"
+        ],
+        [
+            "Magdalena Valley dry forests",
+            "Neotropic"
+        ],
+        [
+            "Maracaibo dry forests",
+            "Neotropic"
+        ],
+        [
+            "Maranh\u00e3o Baba\u00e7u forests",
+            "Neotropic"
+        ],
+        [
+            "Marianas tropical dry forests",
+            "Oceania"
+        ],
+        [
+            "Narmada Valley dry deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "New Caledonia dry forests",
+            "Australasia"
+        ],
+        [
+            "North Deccan dry deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Panamanian dry forests",
+            "Neotropic"
+        ],
+        [
+            "Pat\u00eda valley dry forests",
+            "Neotropic"
+        ],
+        [
+            "Puerto Rican dry forests",
+            "Neotropic"
+        ],
+        [
+            "Sierra de la Laguna dry forests",
+            "Neotropic"
+        ],
+        [
+            "Sinaloan dry forests",
+            "Neotropic"
+        ],
+        [
+            "Sin\u00fa Valley dry forests",
+            "Neotropic"
+        ],
+        [
+            "Sonoran-Sinaloan subtropical dry forest",
+            "Nearctic"
+        ],
+        [
+            "South Deccan Plateau dry deciduous forests",
+            "Indomalayan"
+        ],
+        [
+            "Southeast Indochina dry evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "Southern Pacific dry forests",
+            "Neotropic"
+        ],
+        [
+            "Southern Vietnam lowland dry forests",
+            "Indomalayan"
+        ],
+        [
+            "Sri Lanka dry-zone dry evergreen forests",
+            "Indomalayan"
+        ],
+        [
+            "Sumba deciduous forests",
+            "Australasia"
+        ],
+        [
+            "Timor and Wetar deciduous forests",
+            "Australasia"
+        ],
+        [
+            "Tumbes-Piura dry forests",
+            "Neotropic"
+        ],
+        [
+            "Veracruz dry forests",
+            "Neotropic"
+        ],
+        [
+            "Yap tropical dry forests",
+            "Oceania"
+        ],
+        [
+            "Yucat\u00e1n dry forests",
+            "Neotropic"
+        ],
+        [
+            "Zambezian evergreen dry forests",
+            "Afrotropic"
+        ],
+        [
+            "Brazilian Atlantic dry forests",
+            "Neotropic"
+        ],
+        [
+            "Trinidad and Tobago dry forest",
+            "Neotropic"
+        ],
+        [
+            "Lesser Antillean dry forests",
+            "Neotropic"
+        ]
+    ],
+    "Tropical & Subtropical Coniferous Forests": [
+        [
+            "Bermuda subtropical conifer forests",
+            "Nearctic"
+        ],
+        [
+            "Central American pine-oak forests",
+            "Neotropic"
+        ],
+        [
+            "Cuban pine forests",
+            "Neotropic"
+        ],
+        [
+            "Himalayan subtropical pine forests",
+            "Indomalayan"
+        ],
+        [
+            "Hispaniolan pine forests",
+            "Neotropic"
+        ],
+        [
+            "Luzon tropical pine forests",
+            "Indomalayan"
+        ],
+        [
+            "Northeast India-Myanmar pine forests",
+            "Indomalayan"
+        ],
+        [
+            "Sierra de la Laguna pine-oak forests",
+            "Neotropic"
+        ],
+        [
+            "Sierra Madre de Oaxaca pine-oak forests",
+            "Neotropic"
+        ],
+        [
+            "Sierra Madre del Sur pine-oak forests",
+            "Neotropic"
+        ],
+        [
+            "Sierra Madre Occidental pine-oak forests",
+            "Nearctic"
+        ],
+        [
+            "Sierra Madre Oriental pine-oak forests",
+            "Nearctic"
+        ],
+        [
+            "Sumatran tropical pine forests",
+            "Indomalayan"
+        ],
+        [
+            "Trans-Mexican Volcanic Belt pine-oak forests",
+            "Neotropic"
+        ],
+        [
+            "Bahamian pineyards",
+            "Neotropic"
+        ]
+    ],
+    "N/A": [
+        [
+            "Rock and Ice",
+            "N/A"
+        ]
+    ]
+}

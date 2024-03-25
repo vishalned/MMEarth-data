@@ -1,0 +1,33 @@
+{
+    "realm1": {
+        "Tundra": 36,
+        "Tropical & Subtropical Moist Broadleaf Forests": 81,
+        "Mediterranean Forests, Woodlands & Scrub": 5,
+        "Deserts & Xeric Shrublands": 27,
+        "Temperate Grasslands, Savannas & Shrublands": 23,
+        "Boreal Forests/Taiga": 15,
+        "Temperate Conifer Forests": 24,
+        "Temperate Broadleaf & Mixed Forests": 21,
+        "Montane Grasslands & Shrublands": 9,
+        "Mangroves": 7,
+        "Flooded Grasslands & Savannas": 8,
+        "Tropical & Subtropical Grasslands, Savannas & Shrublands": 12,
+        "Tropical & Subtropical Dry Broadleaf Forests": 33,
+        "Tropical & Subtropical Coniferous Forests": 11
+    },
+    "realm2": {
+        "Tundra": 15,
+        "Tropical & Subtropical Moist Broadleaf Forests": 60,
+        "Mediterranean Forests, Woodlands & Scrub": 35,
+        "Deserts & Xeric Shrublands": 70,
+        "Temperate Grasslands, Savannas & Shrublands": 25,
+        "Boreal Forests/Taiga": 11,
+        "Temperate Conifer Forests": 21,
+        "Temperate Broadleaf & Mixed Forests": 59,
+        "Montane Grasslands & Shrublands": 36,
+        "Mangroves": 7,
+        "Flooded Grasslands & Savannas": 16,
+        "Tropical & Subtropical Grasslands, Savannas & Shrublands": 42,
+        "Tropical & Subtropical Dry Broadleaf Forests": 7
+    }
+}

@@ -1,0 +1,74 @@
+
+# general config
+export_folder: /projects/dereeco/data/global-lr/data_missing_130 # name of the main folder inside the bucket or the local folder
+# bucket: global-dataset # name of the bucket
+start_from: 0 # start from the 0th tile or start from a custom tile (useful if the script fails and you want to start from where it left off)
+end_at: 1000 # end at the 1000th tile or end at a custom tile (useful if the script fails and you want to start from where it left off)
+log: INFO # log level #DEBUG, INFO, ERROR
+tiles_path: '/home/qbk152/vishal/global-lr/data/missing_tiles_1M.geojson' #1000 tiles
+tile_info_path: '' # this is the path that contains all the tile info - useful if you want to start with a new data apart from s2
+seed: 42 # seed for random image selection in S2  
+
+
+# dataset config
+
+# dataset to download
+# THINGS TO NOTE: for this version of the code, you need to put sentinel2 first if you want to download it along with other datasets. This is because s2 is the base dataset and we use it to get the tile information.
+# Incase you have already downloaded s2, then you can put any dataset first, and it downloads the other datasets. The name of the dataset should be the same name as the function call. Here are the names of the functions:
+# sentinel2, sentinel1, srtm, era5
+datasets: ["sentinel2", "sentinel1", "aster", "era5", "dynamic_world", "canopy_height_eth", "esa_worldcover"] 
+# datasets: ["esa_worldcover"]
+
+
+# config for the data
+# make sure there is no space in the 'name' field
+sentinel2:
+  name: "sentinel2" 
+  BANDS: [["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8A", "B8", "B9", "B11", "B12", "SCL", "MSK_CLDPRB", "QA60"],
+          ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8A", "B8", "B9", "B10", "B11", "B12", "QA60"]]
+  collection: ["COPERNICUS/S2_SR", 
+              "COPERNICUS/S2"]
+
+sentinel1:
+  name: "sentinel1" 
+  BANDS: ["VV", "VH", "HH", "HV"] # we download all the bands and both orbits
+  collection: "COPERNICUS/S1_GRD"
+
+aster:
+  name: "aster"
+  BANDS: ["b1"]
+  collection: "projects/sat-io/open-datasets/ASTER/GDEM"
+
+era5:
+  name: "era5"
+  BANDS: ["temperature_2m", "temperature_2m_min", "temperature_2m_max", "total_precipitation_sum"]
+  collection: "ECMWF/ERA5_LAND/MONTHLY_AGGR"
+
+# era5:
+#   name: "era5"
+#   BANDS: ["mean_2m_air_temperature", "minimum_2m_air_temperature", "maximum_2m_air_temperature", "total_precipitation"]
+#   collection: "ECMWF/ERA5/MONTHLY"
+
+dynamic_world:
+  name: "dynamic_world"
+  BANDS: ["label"]
+  collection: "GOOGLE/DYNAMICWORLD/V1"
+
+canopy_height_eth:
+  name: "canopy_height_eth"
+  COLLECTIONS: ["users/nlang/ETH_GlobalCanopyHeight_2020_10m_v1", "users/nlang/ETH_GlobalCanopyHeightSD_2020_10m_v1"]
+
+esa_worldcover:
+  name: "esa_worldcover"
+  BANDS: ["Map"]
+  collection: "ESA/WorldCover/v100"
+
+
+
+
+
+# do not change anything below this line, the main script will automatically update these values
+update_geojson: False
+read_tile_info: False
+defaults:
+  - hydra/job_logging: disabled # by default hydra has a logging config file, comment this line if you want to use that instead. That will print the logs to the console, and also save it to a file

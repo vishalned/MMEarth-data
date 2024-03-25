@@ -1,0 +1,17 @@
+
+biome_names_path: '/home/qbk152/vishal/global-lr/stats/biome_names.json' # path to the file containing the names of the biomes
+tiles_geojson_path: '/home/qbk152/vishal/global-lr/tiles_uni_biomes_only.geojson' # path to the file containing the tiles 
+failed_eco_regions_path: '/home/qbk152/vishal/global-lr/failed_eco_regions.txt' # path to the file containing the eco regions that failed to download
+
+
+tile_size: 1300 # 1.3km
+num_of_images: 1300000 # always set this number more than the number of tiles required. This is because some tiles might fail to download
+num_of_biomes: 14 # number of biomes in the world (do not change)
+
+# uniform sampling type:
+# 0: uniform across biomes without equal sampling within each eco-region inside a biome
+# 1: uniform across biomes and equal sampling within each eco-region inside a biome
+# 2: uniform across eco-regions
+uniform_type: 0
+
+

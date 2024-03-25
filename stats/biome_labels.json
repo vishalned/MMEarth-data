@@ -1,0 +1,16 @@
+{
+    "Tundra": 0,
+    "Tropical & Subtropical Moist Broadleaf Forests": 1,
+    "Mediterranean Forests, Woodlands & Scrub": 2,
+    "Deserts & Xeric Shrublands": 3,
+    "Temperate Grasslands, Savannas & Shrublands": 4,
+    "Boreal Forests/Taiga": 5,
+    "Temperate Conifer Forests": 6,
+    "Temperate Broadleaf & Mixed Forests": 7,
+    "Montane Grasslands & Shrublands": 8,
+    "Mangroves": 9,
+    "Flooded Grasslands & Savannas": 10,
+    "Tropical & Subtropical Grasslands, Savannas & Shrublands": 11,
+    "Tropical & Subtropical Dry Broadleaf Forests": 12,
+    "Tropical & Subtropical Coniferous Forests": 13
+}

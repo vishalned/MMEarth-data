@@ -1,0 +1,14 @@
+.idea
+outputs/
+data/
+# data_*/
+tests/
+tile_polygons/
+data_1000/
+tile_info_*
+tiles_*
+tile_info/
+__pycache__/
+config/__pycache__/
+ee_utils/__pycache__/
+utils/__pycache__/
