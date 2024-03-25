@@ -28,13 +28,32 @@ This repository allows downloading data from various sensors. Currently the code
   
 
 ## Code Structure
-The data downloading happens only when you have a geojson file with all the tiles you want to download. Here tiles represent ROI (or polygons) for each location that you want. 
-Once you have the tiles, the data stacks (data for each modality) are downloaded for each tile in the geojson. 
-- `create_tiles_polygon.py` is the file used to create the tiles. The corresponding config is `config/config_tiles.yaml`. In the config you can set the size of the tile in meters along with the number of tiles to download and the sampling method (how to sample the tiles in a region). Note: the various sampling techniques are based on the biomes and ecoregions from the
-  [RESOLVE ECOREGIONS](https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017).
-- `main_download.py` is the main script to download the data. The corresponding config is `config/config_data.yaml`. The config file contains various parameter to be set regarding the different modalities, and paths. Based on the geojson file created from the above step, this file downloads the data stacks for each tile. The `ee_utils/ee_data.py` file contains functions for each modality in the data stack.
-- `post_download.py` is the file that contains scripts to be executed after downloading the data stacks. This script does 3 things (optional). First it merges all the tile information (explained more below), then it converts the data stacks into a h5 file, then computes band statistics for each modalities (used for normalization purposes), and finally creates the splits.
+The data downloading happens only when you have a geojson file with all the tiles you want to download. Here tiles represent ROI (or polygons) for each location that you want. Once you have the tiles, the data stacks (data for each modality) are downloaded for each tile in the geojson. The data can be downloaded by following this broad structure, and each of these points are further explained below:
+* creating tiles (small ROIs sampled globally)
+* download data stacks for each of the tiles
+* post processing of the downloaded daata
+* redownload (if needed)
+
+#### Creating Tiles
+- `create_tiles_polygon.py` is the file used to create the tiles. The corresponding config is `config/config_tiles.yaml`.  For a global sample, the various sampling techniques are based on the biomes and ecoregions from the [RESOLVE ECOREGIONS](https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017).
+- In the config you can set the size of the tile in meters along with the number of tiles to download and the sampling method (how to sample the tiles in a region).
+
+#### Downloading Data Stacks 
+- `main_download.py` is the main script to download the data. The corresponding config is `config/config_data.yaml`. The config file contains various parameter to be set regarding the different modalities, and paths. Based on the geojson file created from the above step, this file downloads the data stacks for each tile.
+- The `ee_utils/ee_data.py` file contains custom functions for retrieving each modality in the data stack from GEE. It merges all these modalities into one array, and export it as a GeoTIFF file. The band information and other tile information is stored in a json file (`tile_info.json`).
+
+#### Post Processing
+- The `post_download.py` file performs 4 operations sequentially:
+  - Mergining multiple `tile_info.json` files (these files are created when parallely downloading using slurm - explained more below)
+  - Converting the GeoTIFFs to single hdf5 file.
+  - Obtaining statistics for each band. (used for normalization purposes)
+  - Computing the splits (train, val splits - only if needed).
+ 
+
+#### Redownload
 - `redownload.py` is the file that can be used to redownload any tiles that failed to download. Sometimes when downloading the data stacks, the script can skip tiles due to various reasons (lack of sentinel-2 reference image, network issues, GEE issues). Hence if needed, we have an option to redownload these tile. (An alternative is to just download more tiles than needed).
+
+## SLURM EXECUTION
 
   
 
