@@ -12,3 +12,6 @@ __pycache__/
 config/__pycache__/
 ee_utils/__pycache__/
 utils/__pycache__/
+.DS_Store
+ee_utils/.DS_Store
+config/.DS_Store
