@@ -1,5 +1,8 @@
 # MMEarth - Data Downloading
-This repository contains scripts to download large scale satellite data from different sensors and satellites (sentinel-2, sentinel-1, temperature, precipitation etc) which we call modalities..
+This repository contains scripts to download large scale satellite data from different sensors and satellites (sentinel-2, sentinel-1, temperature, precipitation etc) which we call modalities.
+
+
+
 
 ## Table of contents
 
@@ -54,6 +57,8 @@ The data downloading happens only when you have a geojson file with all the tile
 - `redownload.py` is the file that can be used to redownload any tiles that failed to download. Sometimes when downloading the data stacks, the script can skip tiles due to various reasons (lack of sentinel-2 reference image, network issues, GEE issues). Hence if needed, we have an option to redownload these tile. (An alternative is to just download more tiles than needed).
 
 ## SLURM EXECUTION
+
+<img width="815" alt="MMEarth-data" src="https://github.com/vishalned/MMEarth-data/assets/27778126/02764bda-7384-4359-bdae-01c4456239a0">
 
   
 
