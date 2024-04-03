@@ -5,6 +5,10 @@ This repository contains scripts to download large scale satellite data from dif
 
 
 ## Table of contents
+1. [Getting Started](https://github.com/vishalned/MMEarth-data/edit/main/README.md#getting-started)
+2. [Data Stacks](https://github.com/vishalned/MMEarth-data/edit/main/README.md#data-stacks)
+3. [Code Structure](https://github.com/vishalned/MMEarth-data/edit/main/README.md#code-structure)
+4. [Slurm Execution](https://github.com/vishalned/MMEarth-data/edit/main/README.md#slurm-execution)
 
 ## Getting Started
 To get started with this repository, you can install the dependencies and packages with this command 
@@ -34,7 +38,7 @@ This repository allows downloading data from various sensors. Currently the code
 The data downloading happens only when you have a geojson file with all the tiles you want to download. Here tiles represent ROI (or polygons) for each location that you want. Once you have the tiles, the data stacks (data for each modality) are downloaded for each tile in the geojson. The data can be downloaded by following this broad structure, and each of these points are further explained below:
 * creating tiles (small ROIs sampled globally)
 * download data stacks for each of the tiles
-* post processing of the downloaded daata
+* post processing of the downloaded data
 * redownload (if needed)
 
 #### Creating Tiles
@@ -56,9 +60,22 @@ The data downloading happens only when you have a geojson file with all the tile
 #### Redownload
 - `redownload.py` is the file that can be used to redownload any tiles that failed to download. Sometimes when downloading the data stacks, the script can skip tiles due to various reasons (lack of sentinel-2 reference image, network issues, GEE issues). Hence if needed, we have an option to redownload these tile. (An alternative is to just download more tiles than needed).
 
-## SLURM EXECUTION
+
+(**NOTE**: The files are executed by making use of SLURM. More information on this is provided in the [Slurm Execution](https://github.com/vishalned/MMEarth-data/edit/main/README.md#slurm-execution) section)
+
+## Slurm Execution
 
 <img width="815" alt="MMEarth-data" src="https://github.com/vishalned/MMEarth-data/assets/27778126/02764bda-7384-4359-bdae-01c4456239a0">
+
+
+**Downloading Data Stacks:** To speed up the data downloading, we make use of parallel processing using SLURM. The above figures give an idea of how this is done. The tile information (tile GeoJSON) contains location information and more about N tiles we need to download. N/40 tiles are downloaded by 40 slurm jobs (we set the max jobs as 40 since this is the maximum number of concurrent requests by the GEE API). 
+  
+To run the slurm parallel download, execute the following command
+```sh
+sbatch slurm_scripts/slurm_download_parallel.sh
+```
+
+
 
   
 
