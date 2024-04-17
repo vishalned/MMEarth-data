@@ -5,10 +5,11 @@ This repository contains scripts to download large scale satellite data from dif
 
 
 ## Table of contents
-1. [Getting Started](https://github.com/vishalned/MMEarth-data/edit/main/README.md#getting-started)
-2. [Data Stacks](https://github.com/vishalned/MMEarth-data/edit/main/README.md#data-stacks)
-3. [Code Structure](https://github.com/vishalned/MMEarth-data/edit/main/README.md#code-structure)
-4. [Slurm Execution](https://github.com/vishalned/MMEarth-data/edit/main/README.md#slurm-execution)
+1. [Getting Started](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#getting-started)
+2. [Data Stacks](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-stacks)
+3. [Code Structure](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#code-structure)
+4. [Slurm Execution](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#slurm-execution)
+
 
 ## Getting Started
 To get started with this repository, you can install the dependencies and packages with this command 
@@ -61,7 +62,7 @@ The data downloading happens only when you have a geojson file with all the tile
 - `redownload.py` is the file that can be used to redownload any tiles that failed to download. Sometimes when downloading the data stacks, the script can skip tiles due to various reasons (lack of sentinel-2 reference image, network issues, GEE issues). Hence if needed, we have an option to redownload these tile. (An alternative is to just download more tiles than needed).
 
 
-(**NOTE**: The files are executed by making use of SLURM. More information on this is provided in the [Slurm Execution](https://github.com/vishalned/MMEarth-data/edit/main/README.md#slurm-execution) section)
+(**NOTE**: The files are executed by making use of SLURM. More information on this is provided in the [Slurm Execution](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#slurm-execution) section)
 
 ## Slurm Execution
 
