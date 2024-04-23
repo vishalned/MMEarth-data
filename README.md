@@ -5,11 +5,30 @@ This repository contains scripts to download large scale satellite data from dif
 
 
 ## Table of contents
-1. [Getting Started](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#getting-started)
-2. [Data Stacks](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-stacks)
+1. [Data Download](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-download)
+2. [Getting Started](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#getting-started)
+3. [Data Stacks](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-stacks)
 4. [Code Structure](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#code-structure)
 5. [Slurm Execution](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#slurm-execution)
-6. [Data Download](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-download)
+
+## Data Download
+The MMEarth data can be downloaded using the following links. To enable more easier development with Multi-Modal data, we also provide 2 more "taster" datasets along with the original MMEarth data.
+
+| **Dataset** | **Image Size** | **Number of Tiles** | **Dataset size** | **Link** |
+| :---: | :---: | :---: | :---: | :---: |
+| MMEarth Original | 128x128 | 1.2M | 639GB | [download](https://sid.erda.dk/sharelink/BDqKXwG5RZ) |
+| MMEarth Taster | 64x64 | 1.2M | 163GB | [download](https://sid.erda.dk/sharelink/FZ8k0MINm1) |
+| MMEarth Taster | 128x128 | 100k | 48GB | [download](https://sid.erda.dk/sharelink/c90AnWwPUp) | 
+
+All 3 dataset have a similar structure as below:
+
+    .
+    ├── data_1M_128/                      # root data directory
+    │   ├── data_1M_128.h5                # h5 file containing the data
+    │   ├── data_1M_128_band_stats.json   # json file containing information about the bands present in the h5 file for each data stack
+    │   ├── data_1M_128_splits.json       # json file containing information for train, val, test splits
+    │   └── data_1M_128_tile_info.json    # json file containing additional meta information of each tile that was downloaded. 
+  
 
 
 ## Getting Started
@@ -78,24 +97,7 @@ sbatch slurm_scripts/slurm_download_parallel.sh
 ```
 
 
-## Data Download
-The MMEarth data can be downloaded using the following links. To enable more easier development with Multi-Modal data, we also provide 2 more "taster" datasets along with the original MMEarth data.
 
-| **Dataset** | **Image Size** | **Number of Tiles** | **Dataset size** | **Link** |
-| :---: | :---: | :---: | :---: | :---: |
-| MMEarth Original | 128x128 | 1.2M | 639GB | [download](https://sid.erda.dk/sharelink/BDqKXwG5RZ) |
-| MMEarth Taster | 64x64 | 1.2M | 163GB | [download](https://sid.erda.dk/sharelink/FZ8k0MINm1) |
-| MMEarth Taster | 128x128 | 100k | 48GB | [download](https://sid.erda.dk/sharelink/c90AnWwPUp) | 
-
-All 3 dataset have a similar structure as below:
-
-    .
-    ├── data_1M_128/                      # root data directory
-    │   ├── data_1M_128.h5                # h5 file containing the data
-    │   ├── data_1M_128_band_stats.json   # json file containing information about the bands present in the h5 file for each data stack
-    │   ├── data_1M_128_splits.json       # json file containing information for train, val, test splits
-    │   └── data_1M_128_tile_info.json    # json file containing additional meta information of each tile that was downloaded. 
-  
 
 
 
