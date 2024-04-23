@@ -1,5 +1,5 @@
 # MMEarth - Data Downloading
-This repository contains scripts to download large scale satellite data from different sensors and satellites (sentinel-2, sentinel-1, temperature, precipitation etc) which we call modalities.
+This repository contains scripts to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities.
 
 
 
@@ -47,12 +47,14 @@ Once this is done, you need to setup gcloud and earthengine to make the code wor
 
 ## Data Stacks
 This repository allows downloading data from various sensors. Currently the code is written to download the following sensors/modalities:
-- Sentinel 2
-- Sentinel 1
-- ERA5 (Temperature and precipitation)
-- Aster DEM (Elevation and Slope)
-- Dynamic world (LULC)
-- Canopy Height
+- [Sentinel-2](https://developers.google.com/earth-engine/datasets/catalog/sentinel-2)
+- [Sentinel-1](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD)
+- [ERA5 (Temperature and precipitation)](https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY_AGGR)
+- [Aster GDEM (Elevation and Slope)](https://gee-community-catalog.org/projects/aster/)
+- [Dynamic world (LULC)](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1)
+- [Canopy Height](https://gee-community-catalog.org/projects/canopy/)
+
+  _NOTE: For the current version of the dataset, Sentinel-2 has been downloaded using these deprecated GEE links ([L1C](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2), [L2A](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR))._
   
 
 ## Code Structure
