@@ -12,7 +12,7 @@ This repository contains scripts to download large scale satellite data from dif
 5. [Slurm Execution](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#slurm-execution)
 
 ## Data Download
-The MMEarth data can be downloaded using the following links. To enable more easier development with Multi-Modal data, we also provide 2 more "taster" datasets along with the original MMEarth data.
+The MMEarth data can be downloaded using the following links. To enable more easier development with Multi-Modal data, we also provide 2 more "taster" datasets along with the original MMEarth data. The license for the data is [CC BY 4.0](https://github.com/vishalned/MMEarth-data/blob/main/LICENSE-data).
 
 | **Dataset** | **Image Size** | **Number of Tiles** | **Dataset size** | **Data Link** | **Bash Script** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
