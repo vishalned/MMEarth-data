@@ -6,6 +6,7 @@ file_urls=(
     "https://sid.erda.dk/share_redirect/FZ8k0MINm1/data_1M_64_tile_info.json"
     "https://sid.erda.dk/share_redirect/FZ8k0MINm1/data_1M_64_splits.json"
     "https://sid.erda.dk/share_redirect/FZ8k0MINm1/data_1M_64.h5"
+    "https://sid.erda.dk/share_redirect/FZ8k0MINm1/LICENSE-data"
 )
 
 # Destination folder to save the downloaded files
