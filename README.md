@@ -1,5 +1,6 @@
 
-<img width="1012" alt="banner2" src="https://github.com/vishalned/MMEarth-data/assets/27778126/de9cf1c1-9da9-4e09-86e9-e3a746df46ed">
+<img width="1012" alt="banner2" src="https://github.com/vishalned/MMEarth-data/assets/27778126/53f16660-4163-4086-a5fe-1de54bd78443">
+
 
 # MMEarth - Data Downloading
 This repository contains scripts to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities.
