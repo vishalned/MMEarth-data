@@ -57,6 +57,7 @@ This repository allows downloading data from various sensors. Currently the code
 - [Aster GDEM (Elevation and Slope)](https://gee-community-catalog.org/projects/aster/)
 - [Dynamic world (LULC)](https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1)
 - [Canopy Height](https://gee-community-catalog.org/projects/canopy/)
+- [ESA WorldCover](https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v100)
 
   _NOTE: For the current version of the dataset, Sentinel-2 has been downloaded using these deprecated GEE links ([L1C](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2), [L2A](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR))._
   
