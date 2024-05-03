@@ -1,9 +1,17 @@
 
-<img width="1012" alt="banner2" src="https://github.com/vishalned/MMEarth-data/assets/27778126/53f16660-4163-4086-a5fe-1de54bd78443">
+![MMEarth-logo](https://github.com/vishalned/MMEarth-data/assets/27778126/09675b82-ff9e-43be-9160-3267b948e941)
+
+
+
 
 
 # MMEarth - Data Downloading
-This repository contains scripts to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities.
+[![Project Website](https://img.shields.io/badge/Project%20Website-8A2BE2)](https://vishalned.github.io/mmearth)
+[![Paper](https://img.shields.io/badge/arXiv-xxxx.xxxxx-blue)](https://arxiv.org/abs/xxxx.xxxxx)
+[![Code - Models](https://img.shields.io/badge/github-yellow)]([https://arxiv.org/abs/2301.10343](https://github.com/vishalned/MMEarth-train/tree/main))
+
+
+This repository contains scripts to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities. The data is downloaded from [Google Earth Engine](https://earthengine.google.com/).
 
 
 
