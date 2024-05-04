@@ -11,7 +11,7 @@
 [![Code - Models](https://img.shields.io/badge/Code%20--%20Model-darkgreen)](https://github.com/vishalned/MMEarth-train/tree/main)
 
 
-This repository contains scripts to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities. The data is downloaded from [Google Earth Engine](https://earthengine.google.com/).
+This repository contains scripts to download the data presented in the paper [MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning](). The scripts are used  to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities. The data is downloaded from [Google Earth Engine](https://earthengine.google.com/).
 
 
 
