@@ -119,18 +119,15 @@ sbatch slurm_scripts/slurm_download_parallel.sh
 ## Citation 
 Please cite our paper if you use this code or any of the provided data.
 
-<!--- # Lang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023). A high-resolution canopy height model of the Earth. Nature Ecology & Evolution, 1-12.
+Vishal Nedungadi, Ankit Kariryaa, Stefan Oehmcke, Serge Belongie, Christian Igel, & Nico Lang (2024). MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning.
 ```
-@article{lang2023high,
-  title={A high-resolution canopy height model of the Earth},
-  author={Lang, Nico and Jetz, Walter and Schindler, Konrad and Wegner, Jan Dirk},
-  journal={Nature Ecology \& Evolution},
-  pages={1--12},
-  year={2023},
-  publisher={Nature Publishing Group UK London}
+  @article{mmearth2024,
+    title={{MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning}},
+    author={Vishal Nedungadi and Ankit Kariryaa and Stefan Oehmcke and Serge Belongie and Christian Igel and Nico Lang},
+    year={2024},
 }
 ```
--->
+
 
 
 
