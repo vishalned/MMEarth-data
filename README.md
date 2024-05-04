@@ -45,7 +45,7 @@ All 3 dataset have a similar structure as below:
   
 
 ## Data Loading
-A sample Jupyter Notebook that shows an example to load the data using pytorch is [here]().
+A sample Jupyter Notebook that shows an example to load the data using pytorch is [here](https://github.com/vishalned/MMEarth-train/blob/main/data_loader_example.ipynb).
 
 ## Getting Started
 To get started with this repository, you can install the dependencies and packages with this command 
