@@ -18,10 +18,12 @@ This repository contains scripts to download large scale satellite data from dif
 
 ## Table of contents
 1. [Data Download](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-download)
-2. [Getting Started](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#getting-started)
-3. [Data Stacks](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-stacks)
-4. [Code Structure](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#code-structure)
-5. [Slurm Execution](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#slurm-execution)
+2. [Data Loading](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-loading)
+3. [Getting Started](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#getting-started)
+4. [Data Stacks](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#data-stacks)
+5. [Code Structure](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#code-structure)
+6. [Slurm Execution](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#slurm-execution)
+7. [Citation](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#citation)
 
 ## Data Download
 The MMEarth data can be downloaded using the following links. To enable more easier development with Multi-Modal data, we also provide 2 more "taster" datasets along with the original MMEarth data. The license for the data is [CC BY 4.0](https://github.com/vishalned/MMEarth-data/blob/main/LICENSE-data).
@@ -42,6 +44,8 @@ All 3 dataset have a similar structure as below:
     │   └── data_1M_128_tile_info.json    # json file containing additional meta information of each tile that was downloaded. 
   
 
+## Data Loading
+A sample Jupyter Notebook that shows an example to load the data using pytorch is [here]().
 
 ## Getting Started
 To get started with this repository, you can install the dependencies and packages with this command 
@@ -111,6 +115,22 @@ To run the slurm parallel download, execute the following command
 sbatch slurm_scripts/slurm_download_parallel.sh
 ```
 
+
+## Citation 
+Please cite our paper if you use this code or any of the provided data.
+
+<!--- # Lang, N., Jetz, W., Schindler, K., & Wegner, J. D. (2023). A high-resolution canopy height model of the Earth. Nature Ecology & Evolution, 1-12.
+```
+@article{lang2023high,
+  title={A high-resolution canopy height model of the Earth},
+  author={Lang, Nico and Jetz, Walter and Schindler, Konrad and Wegner, Jan Dirk},
+  journal={Nature Ecology \& Evolution},
+  pages={1--12},
+  year={2023},
+  publisher={Nature Publishing Group UK London}
+}
+```
+-->
 
 
 
