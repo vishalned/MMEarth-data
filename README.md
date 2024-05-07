@@ -7,7 +7,7 @@
 
 # MMEarth - Data Downloading
 [![Project Website](https://img.shields.io/badge/Project%20Website-8A2BE2)](https://vishalned.github.io/mmearth)
-[![Paper](https://img.shields.io/badge/arXiv-xxxx.xxxxx-blue)](https://arxiv.org/abs/xxxx.xxxxx)
+[![Paper](https://img.shields.io/badge/arXiv-2405.02771-blue)](https://arxiv.org/abs/2405.02771)
 [![Code - Models](https://img.shields.io/badge/Code%20--%20Model-darkgreen)](https://github.com/vishalned/MMEarth-train/tree/main)
 
 
