@@ -121,7 +121,7 @@ Please cite our paper if you use this code or any of the provided data.
 
 Vishal Nedungadi, Ankit Kariryaa, Stefan Oehmcke, Serge Belongie, Christian Igel, & Nico Lang (2024). MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning.
 ```
-  @misc{nedungadi2024mmearth,
+@misc{nedungadi2024mmearth,
       title={MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning},
       author={Vishal Nedungadi and Ankit Kariryaa and Stefan Oehmcke and Serge Belongie and Christian Igel and Nico Lang},
       year={2024},
