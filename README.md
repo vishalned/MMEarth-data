@@ -11,7 +11,7 @@
 [![Code - Models](https://img.shields.io/badge/Code%20--%20Model-darkgreen)](https://github.com/vishalned/MMEarth-train/tree/main)
 
 
-This repository contains scripts to download the data presented in the paper [MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning](). The scripts are used  to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities. The data is downloaded from [Google Earth Engine](https://earthengine.google.com/).
+This repository contains scripts to download the data presented in the paper [MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning](https://arxiv.org/abs/2405.02771). The scripts are used  to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities. The data is downloaded from [Google Earth Engine](https://earthengine.google.com/).
 
 
 
@@ -31,8 +31,8 @@ The MMEarth data can be downloaded using the following links. To enable more eas
 | **Dataset** | **Image Size** | **Number of Tiles** | **Dataset size** | **Data Link** | **Bash Script** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | MMEarth Original | 128x128 | 1.2M | 639GB | [download](https://sid.erda.dk/sharelink/BDqKXwG5RZ) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_128.sh)|
-| MMEarth Taster | 64x64 | 1.2M | 163GB | [download](https://sid.erda.dk/sharelink/FZ8k0MINm1) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_64.sh)|
-| MMEarth Taster | 128x128 | 100k | 48GB | [download](https://sid.erda.dk/sharelink/c90AnWwPUp) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_100k_128.sh)|
+| MMEarth64 | 64x64 | 1.2M | 163GB | [download](https://sid.erda.dk/sharelink/FZ8k0MINm1) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_64.sh)|
+| MMEarth100k | 128x128 | 100k | 48GB | [download](https://sid.erda.dk/sharelink/c90AnWwPUp) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_100k_128.sh)|
 
 All 3 dataset have a similar structure as below:
 
