@@ -30,7 +30,7 @@ The MMEarth data can be downloaded using the following links. To enable more eas
 
 | **Dataset** | **Image Size** | **Number of Tiles** | **Dataset size** | **Data Link** | **Bash Script** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| MMEarth Original | 128x128 | 1.2M | 639GB | [download](https://sid.erda.dk/sharelink/BDqKXwG5RZ) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_128.sh)|
+| MMEarth | 128x128 | 1.2M | 639GB | [download](https://sid.erda.dk/sharelink/BDqKXwG5RZ) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_128.sh)|
 | MMEarth64 | 64x64 | 1.2M | 163GB | [download](https://sid.erda.dk/sharelink/FZ8k0MINm1) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_64.sh)|
 | MMEarth100k | 128x128 | 100k | 48GB | [download](https://sid.erda.dk/sharelink/c90AnWwPUp) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_100k_128.sh)|
 
