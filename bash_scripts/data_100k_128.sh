@@ -2,15 +2,15 @@
 
 # URLs of the files to download
 file_urls=(
-    "https://sid.erda.dk/share_redirect/c90AnWwPUp/data_100k_128_band_stats.json"
-    "https://sid.erda.dk/share_redirect/c90AnWwPUp/data_100k_128_tile_info.json"
-    "https://sid.erda.dk/share_redirect/c90AnWwPUp/data_100k_128_splits.json"
-    "https://sid.erda.dk/share_redirect/c90AnWwPUp/data_100k_128.h5"
-    "https://sid.erda.dk/share_redirect/c90AnWwPUp/LICENSE-data"
+    "https://sid.erda.dk/share_redirect/CoaUojVXzu/data_100k_v001_band_stats.json"
+    "https://sid.erda.dk/share_redirect/CoaUojVXzu/data_100k_v001_tile_info.json"
+    "https://sid.erda.dk/share_redirect/CoaUojVXzu/data_100k_v001_splits.json"
+    "https://sid.erda.dk/share_redirect/CoaUojVXzu/data_100k_v001.h5"
+    "https://sid.erda.dk/share_redirect/CoaUojVXzu/LICENSE-data"
 )
 
 # Destination folder to save the downloaded files
-destination_folder="./data_100k_128/"
+destination_folder="./data_100k_v001/"
 
 # Create the destination folder if it doesn't exist
 mkdir -p "$destination_folder"
