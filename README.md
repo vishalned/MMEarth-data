@@ -28,13 +28,13 @@ This repository contains scripts to download the data presented in the paper [MM
 ## Data Download
 The MMEarth data can be downloaded using the following links. To enable more easier development with Multi-Modal data, we also provide 2 more "taster" datasets along with the original MMEarth data. The license for the data is [CC BY 4.0](https://github.com/vishalned/MMEarth-data/blob/main/LICENSE-data).
 
-:bangbang:  **UPDATE: The dataset is under maintenance, we are fixing some bugs and will share Version 001 soon.** 
+:bangbang:  **UPDATE: The new Version 001 data is ready to download.** 
 
 | **Dataset** | **Image Size** | **Number of Tiles** | **Dataset size** | **Data Link** | **Bash Script** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| MMEarth | 128x128 | 1.2M | 639GB | [download](https://sid.erda.dk/sharelink/BDqKXwG5RZ) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_128.sh)|
-| MMEarth64 | 64x64 | 1.2M | 163GB | [download](https://sid.erda.dk/sharelink/FZ8k0MINm1) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_64.sh)|
-| MMEarth100k | 128x128 | 100k | 48GB | [download](https://sid.erda.dk/sharelink/c90AnWwPUp) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_100k_128.sh)|
+| MMEarth | 128x128 | 1.2M | 639GB | [download](https://sid.erda.dk/sharelink/ChL1BoVEyH) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_128.sh)|
+| MMEarth64 | 64x64 | 1.2M | 163GB | [download](https://sid.erda.dk/sharelink/bX5JzPuwJF) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_1M_64.sh)|
+| MMEarth100k | 128x128 | 100k | 48GB | [download](https://sid.erda.dk/sharelink/CoaUojVXzu) | [bash](https://github.com/vishalned/MMEarth-data/blob/main/bash_scripts/data_100k_128.sh)|
 
 All 3 dataset have a similar structure as below:
 
