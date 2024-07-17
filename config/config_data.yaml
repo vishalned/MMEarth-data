@@ -1,12 +1,12 @@
 
 # general config
-export_folder: /projects/dereeco/data/global-lr/data_missing_130 # name of the main folder inside the bucket or the local folder
+export_folder: /projects/dereeco/data/global-lr/data_1M_v001_era5/ # name of the main folder inside the bucket or the local folder
 # bucket: global-dataset # name of the bucket
 start_from: 0 # start from the 0th tile or start from a custom tile (useful if the script fails and you want to start from where it left off)
 end_at: 1000 # end at the 1000th tile or end at a custom tile (useful if the script fails and you want to start from where it left off)
 log: INFO # log level #DEBUG, INFO, ERROR
-tiles_path: '/home/qbk152/vishal/global-lr/data/missing_tiles_1M.geojson' #1000 tiles
-tile_info_path: '' # this is the path that contains all the tile info - useful if you want to start with a new data apart from s2
+tiles_path: '/projects/dereeco/data/global-lr/geojson_files/tiles_1M_v001.geojson' #1000 tiles
+tile_info_path: '/projects/dereeco/data/global-lr/data_1M_v001_era5/data' # this is the path that contains all the tile info - useful if you want to start with a new data apart from s2
 seed: 42 # seed for random image selection in S2  
 
 
@@ -16,8 +16,8 @@ seed: 42 # seed for random image selection in S2
 # THINGS TO NOTE: for this version of the code, you need to put sentinel2 first if you want to download it along with other datasets. This is because s2 is the base dataset and we use it to get the tile information.
 # Incase you have already downloaded s2, then you can put any dataset first, and it downloads the other datasets. The name of the dataset should be the same name as the function call. Here are the names of the functions:
 # sentinel2, sentinel1, srtm, era5
-datasets: ["sentinel2", "sentinel1", "aster", "era5", "dynamic_world", "canopy_height_eth", "esa_worldcover"] 
-# datasets: ["esa_worldcover"]
+# datasets: ["sentinel2", "sentinel1", "aster", "era5", "dynamic_world", "canopy_height_eth", "esa_worldcover"] 
+datasets: ["era5"]
 
 
 # config for the data
@@ -26,8 +26,8 @@ sentinel2:
   name: "sentinel2" 
   BANDS: [["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8A", "B8", "B9", "B11", "B12", "SCL", "MSK_CLDPRB", "QA60"],
           ["B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8A", "B8", "B9", "B10", "B11", "B12", "QA60"]]
-  collection: ["COPERNICUS/S2_SR", 
-              "COPERNICUS/S2"]
+  collection: ["COPERNICUS/S2_SR_HARMONIZED",
+              "COPERNICUS/S2_HARMONIZED"]
 
 sentinel1:
   name: "sentinel1" 

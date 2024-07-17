@@ -12,7 +12,7 @@ import json
 # store_path = "/home/qbk152/vishal/global-lr/data/data_100k_130_splits.json"
 
 
-def create_splits(data_folder = '', tile_info = '', store_path = '', train_split=0.9, val_split=0.1, test_split=0):
+def create_splits(data_folder = '', tile_info = '', store_path = '', train_split=1.0, val_split=0.0, test_split=0):
 
     if data_folder == '':
         raise ValueError("Please provide the path to the data folder")

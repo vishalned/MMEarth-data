@@ -60,7 +60,7 @@ class ee_set:
         if tile_info is not None:
             self.s2_date = tile_info['S2_DATE']
             self.crs = tile_info['CRS']
-            self.s2_imageid = tile_info['S2_IMAGEID']
+            # self.s2_imageid = tile_info['S2_IMAGEID']
             if self.proj is None:
                 self.proj = ee.Projection(self.crs).atScale(10)
 
@@ -83,38 +83,38 @@ class ee_set:
 
 
         # merging all the images into one image - comment these lines if you want to export the images seperately
-        if not self.no_data:
-            merged_image = self.image_set[self.cfg.datasets[0]] 
-            for data_name, image in self.image_set.items():
-                if data_name == self.cfg.datasets[0]:
-                    continue
+        # if not self.no_data:
+        #     merged_image = self.image_set[self.cfg.datasets[0]] 
+        #     for data_name, image in self.image_set.items():
+        #         if data_name == self.cfg.datasets[0]:
+        #             continue
 
-                if isinstance(image, dict):
-                    for extra_info, img in image.items():
-                        if img is None:
-                            continue
-                        merged_image = ee.Image.cat([merged_image, img])
-                elif image is None:
-                    continue
-                else:
-                    merged_image = ee.Image.cat([merged_image, image])
+        #         if isinstance(image, dict):
+        #             for extra_info, img in image.items():
+        #                 if img is None:
+        #                     continue
+        #                 merged_image = ee.Image.cat([merged_image, img])
+        #         elif image is None:
+        #             continue
+        #         else:
+        #             merged_image = ee.Image.cat([merged_image, image])
 
-            self.image_set = {}
-            if tile_info is not None:
-                self.image_set['extra'] = merged_image
-            else:
-                self.image_set['merged'] = merged_image
+        #     self.image_set = {}
+        #     if tile_info is not None:
+        #         self.image_set['extra'] = merged_image
+        #     else:
+        #         self.image_set['merged'] = merged_image
                     
                     
-        if not self.no_data:
-            start = time.time()
-            try:
-                self.export_local_single()
-            except Exception as e:
-                logging.error(f"Error exporting to local directory: {e}")
-                self.no_data = True
-            # self.export_local_parallel()
-            logging.debug(f"Time taken for exporting all: {time.time() - start}")
+        # if not self.no_data:
+        #     start = time.time()
+        #     try:
+        #         self.export_local_single()
+        #     except Exception as e:
+        #         logging.error(f"Error exporting to local directory: {e}")
+        #         self.no_data = True
+        #     # self.export_local_parallel()
+        #     logging.debug(f"Time taken for exporting all: {time.time() - start}")
             
         
 
@@ -176,8 +176,10 @@ class ee_set:
                     .filterMetadata('CLOUDY_PIXEL_PERCENTAGE', 'less_than', cld_threshold)
             self.s2_type = 'l1c'
             
-        points_filter = get_points_filter(self.polygon, buffer_size = -200)
-        filtered_images = S2.filter(points_filter)
+        # points_filter = get_points_filter(self.polygon, buffer_size = -200)
+        # filtered_images = S2.filter(points_filter)
+
+        filtered_images = S2.filter(ee.Filter.contains('.geo', self.polygon.buffer(200)))
 
         num_filtered_images = filtered_images.size().getInfo()
         if num_filtered_images == 0:
@@ -373,14 +375,15 @@ class ee_set:
         # getting the year in one image collection - we get exactly one year of stats including the current month.  
         year, month, _ = map(int, self.s2_date.split('-'))
 
-        # Calculate start_date and end_date
-        start_date = (datetime(year, month, 1) - timedelta(days=365)).strftime('%Y-%m-%d')
+        # Calculate start_date and end_date for the year
+        # we subtract 1 from the year to get the previous year 
+        start_date = f"{year - 1}-{month}-01"
         end_date = (datetime(year, month, 1) + timedelta(days=32)).replace(day=1) - timedelta(days=1)
         end_date = end_date.strftime('%Y-%m-%d')
 
 
         ERA5_yearly = ee.ImageCollection(cfg.collection)\
-                .filterDate(self.start_date, self.end_date)\
+                .filterDate(start_date, end_date)\
                 .map(lambda image: image.clip(self.polygon))
         
 
@@ -424,7 +427,6 @@ class ee_set:
         # self.image_set[data_name] = ERA5_combined
         
         self.img_bands[data_name] = band_names
-
 
 
         logging.debug('\t ERA5 image loaded')

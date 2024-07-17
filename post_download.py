@@ -16,18 +16,19 @@ def main(args):
     creates the splits (train and valid only)
     '''
 
-    print('Merging the tile_info files for all slurm jobs into a single file')
-    out_path = os.path.join(args.data_dir, args.data_dir.split('/')[-1] + '_tile_info.json') if args.data_dir[-1] != '/' else os.path.join(args.data_dir, args.data_dir.split('/')[-2] + '_tile_info.json')
-    merge_dicts(out_path)
+    # print('Merging the tile_info files for all slurm jobs into a single file')
+    # out_path = os.path.join(args.data_dir, args.data_dir.split('/')[-1] + '_tile_info.json') if args.data_dir[-1] != '/' else os.path.join(args.data_dir, args.data_dir.split('/')[-2] + '_tile_info.json')
+    # in_path = os.path.join(args.data_dir, 'tile_info')
+    # merge_dicts(in_path, out_path)
 
-    print('converting to h5')
-    os.system(f'python -u utils/convert_to_h5.py --mode create --data_dir {args.data_dir}')
+    # print('converting to h5')
+    # os.system(f'python -u utils/convert_to_h5.py --mode create --data_dir {args.data_dir}')
 
     print('computing band stats')
     compute_band_stats(data_folder = args.data_dir)
 
-    print('computing splits')
-    create_splits(data_folder = args.data_dir)
+    # print('computing splits')
+    # create_splits(data_folder = args.data_dir)
 
 
 

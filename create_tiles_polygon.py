@@ -23,15 +23,15 @@ import random
 #     crs = img.projection().crs().getInfo()
 #     return crs
 
-def get_uniq_val(*args):
-    # a function to get a unique id for each input string. It just takes the first letter of each word and concatenates them
-    id = ""
-    for i in args:
-        for j in i.split():
-            #check if the string is an alphabet
-            if j[0].isalpha():
-                id += j[0].lower()         
-    return id
+# def get_uniq_val(*args):
+#     # a function to get a unique id for each input string. It just takes the first letter of each word and concatenates them
+#     id = ""
+#     for i in args:
+#         for j in i.split():
+#             #check if the string is an alphabet
+#             if j[0].isalpha():
+#                 id += j[0].lower()         
+#     return id
 
 @hydra.main(config_path='config', config_name='config_tiles')
 def main(cfg: DictConfig) -> None:
@@ -48,21 +48,26 @@ def main(cfg: DictConfig) -> None:
     elif cfg.uniform_type == 0:
         print('------- Unform across biomes only --------')
         NUM_IMAGES_PER_BIOME = NUM_IMAGES // cfg.num_of_biomes
-        area_biome = json.load(open('./stats/total_area_biome.json'))
-        area_eco = json.load(open('./stats/total_area_eco_region.json'))
+        area_biome = json.load(open('/home/qbk152/vishal/MMEarth-data/stats/total_area_biome.json'))
+        area_eco = json.load(open('/home/qbk152/vishal/MMEarth-data/stats/total_area_eco_region.json'))
 
     # getting the list of biomes
     biome_names = json.load(open(cfg.biome_names_path))
+    
+    tile_id_count = 0 # we use a simple number to keep track of the tile_id. This is just a number that is incremented by 1 for each tile
 
     tiles_list = []
     failed_eco_regions = []
-    biomes = list(biome_names.keys())[0:-1]
-    for j, biome in enumerate(biomes): # skipping the last one because it is rock and ice
+    biomes = list(biome_names.keys())[0:-1] # skipping the last one because it is rock and ice
+
+    # biome loop
+    for j, biome in enumerate(biomes): 
         print(f'Biome {j+1}/14: {biome}')
         if cfg.uniform_type == 1 or cfg.uniform_type == 0:
             print('Number of images per biome: ', NUM_IMAGES_PER_BIOME)
         print('Number of eco-regions: ', len(biome_names[biome]))
 
+        # eco region loop
         for i, eco in enumerate(biome_names[biome]):
             try:
                 eco_region_name, realm = eco[0], eco[1]
@@ -77,9 +82,7 @@ def main(cfg: DictConfig) -> None:
                 print('Number of tiles in the eco-region: ', num_of_tiles)
 
                 # gee only allows max of 5000 features to be exported at a time. So we need to split the eco-regions into smaller batches
-
-
-
+                num_while_loops = 0 # a variable to keep track of the number of while loops we have done
                 while num_of_tiles > 0:
                     
                     tiles_to_export = min(num_of_tiles, 5000)
@@ -89,7 +92,9 @@ def main(cfg: DictConfig) -> None:
 
                     single_region = eco_region.filter(ee.Filter.eq('ECO_NAME', eco_region_name))
                     
-                    coord_string = f"{i}{eco_region_name}{tiles_to_export}" 
+                    # the following 2 lines is just to generate a number based on a string. This ensure that the number is the same for the same string. 
+                    # we mod it by 10^5 to keep it small.
+                    coord_string = f"{i}{eco_region_name}{tiles_to_export}{num_while_loops}" 
                     seed = int(hashlib.sha256(coord_string.encode('utf-8')).hexdigest(), 16) % 10**5 
                     
                     # adding a line to make the seed new as compared to the previous one
@@ -99,15 +104,17 @@ def main(cfg: DictConfig) -> None:
                     tiles = random_points.map(lambda point: point.buffer(cfg.tile_size / 2).bounds())
                     tile_features = tiles.getInfo()['features']
 
-                    for i in range(len(tile_features)):
-                        tile_features[i]['properties'] = {
+                    for idx in range(len(tile_features)):
+                        tile_features[idx]['properties'] = {
                             # 'crs': crs,
-                            'tile_id': f"{get_uniq_val(biome, eco_region_name)}_{i}",
+                            'tile_id': f"{tile_id_count}",
                             'biome': biome,
                             'eco_region': eco_region_name,
                             
                         }
-                        tiles_list.append(tile_features[i])
+                        tiles_list.append(tile_features[idx])
+                        tile_id_count += 1 # incrementing the tile_id
+                    
                     # shuffling the tiles_list
                     random.shuffle(tiles_list)
                     geojson_collection = {
@@ -119,6 +126,7 @@ def main(cfg: DictConfig) -> None:
                         json.dump(geojson_collection, f)
 
                     num_of_tiles -= tiles_to_export
+                    num_while_loops += 1
                     
             except ee.ee_exception.EEException as e:
                 print('Could not get this eco-region. Skipping...')

@@ -38,6 +38,8 @@ NO_DATA_VAL = {
 
 
 def compute_band_stats(data_folder = '', tile_info = '', store_path = ''):
+    SUBSET_SIZE = 100000 ##### define subset size here, we only compute mean and std for a subset
+
 
     if data_folder == '':
         raise ValueError("Please provide the path to the data folder")

@@ -47,15 +47,17 @@ def main(cfg: DictConfig) -> None:
 
     # if sentinel2 is in the datasets, then we need to update the geojson file to include the date of the image, crs, and other details.
     # if it is not present, this means that we are downloading other datasets, and hence need to use the geojson data instead of updating
-    cfg.update_geojson = 'sentinel2' in datasets
+    # cfg.update_geojson = 'sentinel2' in datasets
     cfg.read_tile_info = not 'sentinel2' in datasets # if we are downloading things other than s2, we need to read the tile information from the geojson. 
 
     tile_info_dict = {}
     if cfg.read_tile_info:
         logging.info('Reading tile information from geojson. Please note that any errors with the tiles.geojson, implies that you did not download Sentinel 2 yet. Please download Sentinel 2 first. ')
-        tile_info = json.load(open(cfg.tile_info_path, 'r'))
+        # tile_info = json.load(open(cfg.tile_info_path, 'r'))
+        tile_info = json.load(open('/projects/dereeco/data/global-lr/data_1M_v001/data_1M_v001_tile_info.json', 'r'))
     else:
         tile_info = None
+
 
     i = cfg.start_from
     end = min(cfg.end_at, len(gj['features']))
@@ -80,8 +82,8 @@ def main(cfg: DictConfig) -> None:
         logging.debug(f"Time taken for 1 tile: {time.time() - start_}")
         if cfg.update_geojson and not ee_set_.no_data:
             tile_info_dict[id] = update_tile_info(tile, ee_set_, tile_info[id] if tile_info is not None else None)
-            os.makedirs(f"./data/tile_info", exist_ok=True)
-            with open(f"./data/tile_info/tile_info_{cfg.start_from}_{cfg.end_at}.json", 'w') as f:
+            os.makedirs(f"{cfg.tile_info_path}", exist_ok=True)
+            with open(f"{cfg.tile_info_path}/tile_info_{cfg.start_from}_{cfg.end_at}.json", 'w') as f:
                 geojson.dump(tile_info_dict, f)
         elif ee_set_.no_data:
             logging.info(f"no sentinel2 data for this tile. Skipping")

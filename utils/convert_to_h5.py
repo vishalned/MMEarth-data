@@ -232,29 +232,30 @@ def main(args):
         # we calculate the real number of tiles by verifying how many tiles
         # have number of bands equal to the sum of the bands in the tile_info.json file
 
-        # num_tiles = 0
-        # for i, tile_id in enumerate(tile_info):
-        #     count_t = 0
-        #     for b in MODALITIES_IN_IMAGE:
-        #         if b in tile_info[tile_id]['BANDS']:
-        #             count_t += len(tile_info[tile_id]['BANDS'][b]) if tile_info[tile_id]['BANDS'][b] is not None else 0
+        num_tiles = 0
+        for i, tile_id in enumerate(tile_info):
+            count_t = 0
+            for b in ['sentinel2', 'sentinel1_asc', 'sentinel1_desc', 'aster', 'dynamic_world', 'canopy_height_eth', 'esa_worldcover']:
+                if b in tile_info[tile_id]['BANDS']:
+                    count_t += len(tile_info[tile_id]['BANDS'][b]) if tile_info[tile_id]['BANDS'][b] is not None else 0
 
-        #     try:
-        #         data = tiff.imread(os.path.join(data_dir, tile_id + '.tif'))
-        #     except:
-        #         # sometimes the data is not downloaded, so we skip it
-        #         continue
-        #     if data.shape[-1] == count_t:
-        #         num_tiles += 1
-        #     else:
-        #         #  we store the lat lon in a csv file to check the tiles that have not been downloaded
-        #         print('Tile shape mismatch: ', tile_id)
-        #         lat, lon = tile_info[tile_id]['lat'], tile_info[tile_id]['lon']
-        #         # with open(args.missing_tiles, 'a') as f:
-        #         #     f.write(f'{tile_id},{lat},{lon}\n')
+            try:
+                data = tiff.imread(os.path.join(data_dir, tile_id + '.tif'))
+            except:
+                # sometimes the data is not downloaded, so we skip it
+                continue
+            if data.shape[-1] == count_t:
+                num_tiles += 1
+            else:
+                #  we store the lat lon in a csv file to check the tiles that have not been downloaded
+                print('Tile shape mismatch: ', tile_id)
+                lat, lon = tile_info[tile_id]['lat'], tile_info[tile_id]['lon']
+                # with open(args.missing_tiles, 'a') as f:
+                #     f.write(f'{tile_id},{lat},{lon}\n')
 
-        num_tiles = len(tile_info)
+        # num_tiles = len(tile_info)
         print('Number of tiles: ', num_tiles)
+        print('Number of entries in tile_info: ', len(tile_info))
         print('Number of tiles skipped due to mismatch: ', len(tile_info) - num_tiles)
         # exit()
 
@@ -263,26 +264,28 @@ def main(args):
         # creating a dataset for each modality
         for modality, modality_info in MODALITIES.items():
             if modality == 'lat' or modality == 'lon' or modality == 'month':
-                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, 2), dtype=modality_info['dtype'])
+                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, 2), dtype=modality_info['dtype'], compression='gzip', chunks=(1, 2))
             elif modality == 'biome':
-                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, 14), dtype=modality_info['dtype'])
+                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, 14), dtype=modality_info['dtype'], compression='gzip', chunks=(1, 14))
             elif modality == 'eco_region':
-                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, 846), dtype=modality_info['dtype'])
+                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, 846), dtype=modality_info['dtype'], compression='gzip', chunks=(1, 846))
             elif modality == 'era5':
-                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, modality_info['n_bands']), dtype=modality_info['dtype'])
+                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, modality_info['n_bands']), dtype=modality_info['dtype'], compression='gzip', chunks=(1, modality_info['n_bands']))
             else:
-                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, modality_info['n_bands'], img_size, img_size), dtype=modality_info['dtype'])
+                variables[modality] = hdf5_file.create_dataset(modality, shape=(num_tiles, modality_info['n_bands'], img_size, img_size), dtype=modality_info['dtype'], compression='gzip', chunks=(1, modality_info['n_bands'], img_size, img_size))
         
 
-        metadata_dt = np.dtype([('tile_id', 'S100')]) # string of length 100
-        ds_metadata = hdf5_file.create_dataset('metadata', shape=(num_tiles,), dtype=metadata_dt)
+        # create a new meta data with tile_id and s2 type which is either l2a or l1c
+        metadata_dt = np.dtype([('tile_id', 'S100'), ('S2_type', 'S10')]) # string of length 100
+        ds_metadata = hdf5_file.create_dataset('metadata', shape=(num_tiles,), dtype=metadata_dt, compression='gzip', chunks=(1,))
+
+        # metadata_dt = np.dtype([('tile_id', 'S100')]) # string of length 100
+        # ds_metadata = hdf5_file.create_dataset('metadata', shape=(num_tiles,), dtype=metadata_dt, compression='gzip', chunks=(1,))
 
         j = 0
         count_s = 0
         for i, tile_id in enumerate(tile_info):
-            # if i < 22248:
-            #     continue
-            # print(tile_info[tile_id])
+
             print(f'Processing tile {i}/{num_tiles}, {tile_id}')
             count_t = 0
 
@@ -314,7 +317,8 @@ def main(args):
                     print(e)
                     exit() 
             # breakpoint()        
-            ds_metadata[j] = tile_id
+            # ds_metadata[j] = tile_id
+            ds_metadata[j] = (tile_id, tile_info[tile_id]['S2_type'])
             j += 1
             # exit() ## testing
         hdf5_file.close()

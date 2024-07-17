@@ -13,9 +13,9 @@ echo "SLURM_JOB_NODELIST: $SLURM_JOB_NODELIST"
 
 
 
-python -u /home/qbk152/vishal/global-lr/create_tiles_polygon.py \
-        tiles_geojson_path='/home/qbk152/vishal/global-lr/tile_polygons/uni_biomes_only/tiles_300k_130.geojson' \
-        num_of_images=300000 \
+python -u /home/qbk152/vishal/MMEarth-data/create_tiles_polygon.py\
+        tiles_geojson_path='/projects/dereeco/data/global-lr/geojson_files/tiles_1M_v001.geojson' \
+        num_of_images=1500000 \
         tile_size=1300 \
         uniform_type=0 \
 

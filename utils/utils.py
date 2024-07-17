@@ -16,24 +16,25 @@ def read_geojson(path):
         gj = geojson.load(f)
     return gj
 
-def merge_dicts(path = 'data/data_100k_130_tile_info.json'):
+def merge_dicts(in_path, out_path = 'data/data_100k_130_tile_info.json'):
     '''
     Merges the dictionaries from the tile_info json files.
     '''
 
     # reading all the tile json files
     tile_info_dict = {}
-    for tile_name in glob.glob('data/tile_info/tile_info_*'):
+    for tile_name in glob.glob(f'{in_path}/tile_info_*'):
         tmp = read_geojson(tile_name)
         tile_info_dict = tmp | tile_info_dict
 
     # writing the merged dictionary to a file
-    with open(path, 'w') as f:
+    print(len(tile_info_dict))
+    with open(out_path, 'w') as f:
         geojson.dump(tile_info_dict, f)
 
     # remove the individual tile_info files
-    for tile_name in glob.glob('data/tile_info/tile_info_*'):
-        os.remove(tile_name)
+    # for tile_name in glob.glob('data/tile_info/tile_info_*'):
+    #     os.remove(tile_name)
 
 def create_missing_tiles_geojson():
     '''
@@ -87,6 +88,10 @@ def update_tile_info(tile, ee_set_, tile_info = None):
         new_bands = ee_set_.img_bands
         bands = existing_bands | new_bands
         tile_info['BANDS'] = bands
+
+        # HARDCODED: adding the era5 data to the tile_info
+        if len(ee_set_.era5_data) > 0:
+            tile_info['era5'] = ee_set_.era5_data
         return tile_info
     else:
         return_dict = {}

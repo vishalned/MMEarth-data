@@ -3,7 +3,7 @@
 
 #SBATCH --tasks=1
 #SBATCH --cpus-per-task=4
-#SBATCH --time=1-00:00:00
+#SBATCH --time=2-00:00:00
 # PATH TO SAVE SLURM LOGS
 #SBATCH --output=/home/qbk152/vishal/slurm_logs/temp-%A_%a_%x.out
 # TOTAL MEMORY PER NODE
@@ -30,14 +30,16 @@ echo "SLURM_JOB_NODELIST: $SLURM_JOB_NODELIST"
 #         --data_dir2 /projects/dereeco/data/global-lr/data_missing_130/ \
 #         --output_path /projects/dereeco/data/global-lr/data_1M_130_new/data_1M_130_new2.h5 \
 
-# python -u post_download.py \
-#         --data_dir  /projects/dereeco/data/global-lr/data_missing_130/
+python -u post_download.py \
+        --data_dir  /projects/dereeco/data/global-lr/data_1M_v001/
 
 # python -u data_exp/data_exp.py \
 #         --data_dir /projects/dereeco/data/global-lr/data_1M_130_new
 
-python -u utils/chunking_h5.py \
-        --h5_file_path /projects/dereeco/data/global-lr/data_1M_130_new/data_1M_130_new.h5
+#python -u utils/chunking_h5.py \
+ #       --h5_file_path /projects/dereeco/data/global-lr/data_1M_130_new/data_1M_130_new.h5
+
+
 
 
 

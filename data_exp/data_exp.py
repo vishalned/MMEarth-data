@@ -93,11 +93,14 @@ def month_year(args):
     '''
     Plot the number of tiles per month per year
     '''
-    tile_info = json.load(open(args.tile_info_path))
+    import matplotlib.cm as cm
+    tile_info = json.load(open('/projects/dereeco/data/global-lr/data_1M_v001/data_1M_v001_tile_info.json'))
     month = np.arange(1, 12*4 + 1)
     month_counts = np.zeros(12*4)
 
     for tile in tile_info:
+        # only choosing either l1c or l2a
+        # if tile_info[tile]['S2_type'] == 'l1c':
         m = int(tile_info[tile]['S2_DATE'].split('-')[1])
         y = int(tile_info[tile]['S2_DATE'].split('-')[0])
         month_counts[(y - 2017) * 12 + m - 1] += 1
@@ -106,22 +109,38 @@ def month_year(args):
 
     month_names = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] * 4
     month_labels = [f"{years[i // 12]} {month_names[i]}" for i in range(12*4)]
-    year_colors = ['b', 'g', 'r', 'c']
-
+    # month_labels = [i if 'Jan' in i else '' for i in month_labels]
+    # we name the months 1, 5, 9 for each year
+    for id, i in enumerate(month_labels):
+        if 'Jan' in i:
+            month_labels[id] = '1'
+        elif 'May' in i:
+            month_labels[id] = '5'
+        elif 'Sep' in i:
+            month_labels[id] = '9'
+        else:
+            month_labels[id] = ''
+    # year_colors = ['b', 'g', 'r', 'c']
+    year_colors = [cm.inferno(i/4) for i in range(4)]
+    plt.rcParams.update({'figure.figsize': (14, 10)})
     # Create a bar plot for each year
     for i, year_count in enumerate(yearly_counts):
         plt.bar(np.arange(12*i + 1, 12*i + 13), year_count, label=str(years[i]), color=year_colors[i], alpha=0.7)
 
-    plt.xticks(np.arange(1, 12 * 4 + 1), month_labels, rotation=90, fontsize=6)
-    plt.xlabel('Month')
-    plt.ylabel('Count')
-    plt.title('Monthly Counts by Year')
-    plt.legend(title='Year')
+    plt.xticks(np.arange(1, 12 * 4 + 1), month_labels, fontsize=30)
+    plt.xlabel('Date in months', labelpad=8, fontsize=30)
+    plt.ylabel('Number of samples', labelpad=8, fontsize=30)
+    plt.legend(loc='upper center', ncols = 4, fontsize=24)
+    plt.yticks(fontsize=30)
+    # limit the ylimit to 30000
+    plt.ylim(0, 30000)
     # increase the spacing between each bar plot
-    plt.tight_layout()
-    plt.savefig(os.path.join(args.store_path, 'yearly_counts.png'))
+    # plt.rcParams.update({'font.size': 18})
+    
+    # plt.tight_layout()
+    plt.savefig(os.path.join(args.store_path, 'yearly.png'), dpi=300, format='png', bbox_inches='tight')
+    plt.savefig(os.path.join(args.store_path, 'yearly.pdf'), dpi=300, format='pdf', bbox_inches='tight')
     plt.clf()
-
 
 def dynamic_world(args):
     '''
@@ -391,7 +410,7 @@ if __name__ == '__main__':
     import os
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_dir', type=str, required=True)
-    parser.add_argument('--store_path', type=str, default='/home/qbk152/vishal/global-lr/data_exp')
+    parser.add_argument('--store_path', type=str, default='/home/qbk152/vishal/MMEarth-data/1M_v001_plots/')
     args = parser.parse_args()
 
 
@@ -406,13 +425,13 @@ if __name__ == '__main__':
 
 
     
-    month_only(args)
+    # month_only(args)
     month_year(args)
-    s2_type(args)
-    dynamic_world(args)
-    # era_stats()
-    # aster_stats()
-    esa_worldcover(args)
+    # s2_type(args)
+    # dynamic_world(args)
+    # # era_stats()
+    # # aster_stats()
+    # esa_worldcover(args)
 
 
 
