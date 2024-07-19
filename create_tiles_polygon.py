@@ -12,26 +12,7 @@ import hydra
 from omegaconf import DictConfig, OmegaConf
 import random
 
-# def get_crs_from_s2(single_region):    
-#     s2_image_collection = ee.ImageCollection("COPERNICUS/S2") 
-#     img = s2_image_collection \
-#         .filter(ee.Filter.calendarRange(2020, 2021, 'year')) \
-#         .filter(ee.Filter.calendarRange(6, 8, 'month')) \
-#         .filterBounds(single_region) \
-#         .first()
-#     img = img.select('B4', 'B3', 'B2').float() # we are just choosing these bands for the sake of simplicity to get the CRS
-#     crs = img.projection().crs().getInfo()
-#     return crs
 
-# def get_uniq_val(*args):
-#     # a function to get a unique id for each input string. It just takes the first letter of each word and concatenates them
-#     id = ""
-#     for i in args:
-#         for j in i.split():
-#             #check if the string is an alphabet
-#             if j[0].isalpha():
-#                 id += j[0].lower()         
-#     return id
 
 @hydra.main(config_path='config', config_name='config_tiles')
 def main(cfg: DictConfig) -> None:
@@ -48,8 +29,8 @@ def main(cfg: DictConfig) -> None:
     elif cfg.uniform_type == 0:
         print('------- Unform across biomes only --------')
         NUM_IMAGES_PER_BIOME = NUM_IMAGES // cfg.num_of_biomes
-        area_biome = json.load(open('/home/qbk152/vishal/MMEarth-data/stats/total_area_biome.json'))
-        area_eco = json.load(open('/home/qbk152/vishal/MMEarth-data/stats/total_area_eco_region.json'))
+        area_biome = json.load(open(cfg.aree_biome_path))
+        area_eco = json.load(open(cfg.area_eco_path))
 
     # getting the list of biomes
     biome_names = json.load(open(cfg.biome_names_path))
@@ -106,7 +87,6 @@ def main(cfg: DictConfig) -> None:
 
                     for idx in range(len(tile_features)):
                         tile_features[idx]['properties'] = {
-                            # 'crs': crs,
                             'tile_id': f"{tile_id_count}",
                             'biome': biome,
                             'eco_region': eco_region_name,

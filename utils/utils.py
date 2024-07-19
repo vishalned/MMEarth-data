@@ -89,9 +89,9 @@ def update_tile_info(tile, ee_set_, tile_info = None):
         bands = existing_bands | new_bands
         tile_info['BANDS'] = bands
 
-        # HARDCODED: adding the era5 data to the tile_info
-        if len(ee_set_.era5_data) > 0:
-            tile_info['era5'] = ee_set_.era5_data
+        # # HARDCODED: adding the era5 data to the tile_info
+        # if len(ee_set_.era5_data) > 0:
+        #     tile_info['era5'] = ee_set_.era5_data
         return tile_info
     else:
         return_dict = {}

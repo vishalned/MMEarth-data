@@ -44,10 +44,6 @@ era5:
   BANDS: ["temperature_2m", "temperature_2m_min", "temperature_2m_max", "total_precipitation_sum"]
   collection: "ECMWF/ERA5_LAND/MONTHLY_AGGR"
 
-# era5:
-#   name: "era5"
-#   BANDS: ["mean_2m_air_temperature", "minimum_2m_air_temperature", "maximum_2m_air_temperature", "total_precipitation"]
-#   collection: "ECMWF/ERA5/MONTHLY"
 
 dynamic_world:
   name: "dynamic_world"

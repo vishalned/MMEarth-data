@@ -73,7 +73,6 @@ This repository allows downloading data from various sensors. Currently the code
 - [Canopy Height](https://gee-community-catalog.org/projects/canopy/)
 - [ESA WorldCover](https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v100)
 
-  _NOTE: For the current version of the dataset, Sentinel-2 has been downloaded using these deprecated GEE links ([L1C](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2), [L2A](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR))._
   
 
 ## Code Structure
@@ -110,7 +109,7 @@ The data downloading happens only when you have a geojson file with all the tile
 <img width="815" alt="MMEarth-data" src="https://github.com/vishalned/MMEarth-data/assets/27778126/02764bda-7384-4359-bdae-01c4456239a0">
 
 
-**Downloading Data Stacks:** To speed up the data downloading, we make use of parallel processing using SLURM. The above figures give an idea of how this is done. The tile information (tile GeoJSON) contains location information and more about N tiles we need to download. N/40 tiles are downloaded by 40 slurm jobs (we set the max jobs as 40 since this is the maximum number of concurrent requests by the GEE API). 
+**Downloading Data Stacks:** GEE provides a function called `getDownloadUrl()` that allows you to export images as GeoTIFF files. We extend this by merging all modalities for a single location into one image, and export this as a single GeoTIFF file. To further speed up the data downloading, we make use of parallel processing using SLURM. The above figures give an idea of how this is done. The tile information (tile GeoJSON) contains location information and more about N tiles we need to download. N/40 tiles are downloaded by 40 slurm jobs (we set the max jobs as 40 since this is the maximum number of concurrent requests by the GEE API). 
   
 To run the slurm parallel download, execute the following command
 ```sh

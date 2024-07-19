@@ -78,43 +78,42 @@ class ee_set:
             else:
                 logging.error(f"Function {function_name} does not exist")
             
-            # break # TESTING ONLY SENTINEL2
-            # exit()
+        
 
 
         # merging all the images into one image - comment these lines if you want to export the images seperately
-        # if not self.no_data:
-        #     merged_image = self.image_set[self.cfg.datasets[0]] 
-        #     for data_name, image in self.image_set.items():
-        #         if data_name == self.cfg.datasets[0]:
-        #             continue
+        if not self.no_data:
+            merged_image = self.image_set[self.cfg.datasets[0]] 
+            for data_name, image in self.image_set.items():
+                if data_name == self.cfg.datasets[0]:
+                    continue
 
-        #         if isinstance(image, dict):
-        #             for extra_info, img in image.items():
-        #                 if img is None:
-        #                     continue
-        #                 merged_image = ee.Image.cat([merged_image, img])
-        #         elif image is None:
-        #             continue
-        #         else:
-        #             merged_image = ee.Image.cat([merged_image, image])
+                if isinstance(image, dict):
+                    for extra_info, img in image.items():
+                        if img is None:
+                            continue
+                        merged_image = ee.Image.cat([merged_image, img])
+                elif image is None:
+                    continue
+                else:
+                    merged_image = ee.Image.cat([merged_image, image])
 
-        #     self.image_set = {}
-        #     if tile_info is not None:
-        #         self.image_set['extra'] = merged_image
-        #     else:
-        #         self.image_set['merged'] = merged_image
+            self.image_set = {}
+            if tile_info is not None:
+                self.image_set['extra'] = merged_image
+            else:
+                self.image_set['merged'] = merged_image
                     
                     
-        # if not self.no_data:
-        #     start = time.time()
-        #     try:
-        #         self.export_local_single()
-        #     except Exception as e:
-        #         logging.error(f"Error exporting to local directory: {e}")
-        #         self.no_data = True
-        #     # self.export_local_parallel()
-        #     logging.debug(f"Time taken for exporting all: {time.time() - start}")
+        if not self.no_data:
+            start = time.time()
+            try:
+                self.export_local_single()
+            except Exception as e:
+                logging.error(f"Error exporting to local directory: {e}")
+                self.no_data = True
+            # self.export_local_parallel()
+            logging.debug(f"Time taken for exporting all: {time.time() - start}")
             
         
 
