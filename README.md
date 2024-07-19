@@ -39,11 +39,11 @@ The MMEarth data can be downloaded using the following links. To enable more eas
 All 3 dataset have a similar structure as below:
 
     .
-    ├── data_1M_128/                      # root data directory
-    │   ├── data_1M_128.h5                # h5 file containing the data
-    │   ├── data_1M_128_band_stats.json   # json file containing information about the bands present in the h5 file for each data stack
-    │   ├── data_1M_128_splits.json       # json file containing information for train, val, test splits
-    │   └── data_1M_128_tile_info.json    # json file containing additional meta information of each tile that was downloaded. 
+    ├── data_1M_v001/                      # root data directory
+    │   ├── data_1M_v001.h5                # h5 file containing the data
+    │   ├── data_1M_v001_band_stats.json   # json file containing information about the bands present in the h5 file for each data stack
+    │   ├── data_1M_v001_splits.json       # json file containing information for train, val, test splits
+    │   └── data_1M_v001_tile_info.json    # json file containing additional meta information of each tile that was downloaded. 
   
 
 ## Data Loading
