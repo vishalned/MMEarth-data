@@ -243,30 +243,16 @@ class ee_set:
         '''
 
         start = time.time()
-        def get_closest_date(image):
-            '''
-            This function gets the closest date to the s2 date from the sentinel1 image collection. 
-            '''
-            date = ee.Date(image.get('system:time_start'))
-            date_diff = date.difference(self.s2_date, 'day').abs()
-            return image.set('date_difference', date_diff)
         
-        cfg = self.cfg.sentinel1 # getting the config for sentinel1
-        data_name = cfg.name # the name used to save the image in the image_set dictionary and the export name
-        # bands = cfg.BANDS # for S1 the bands dont matter, we download all and choose the ones we want later
+        img = (ee.ImageCollection('COPERNICUS/S1_GRD')
+                        .filterDate(self.start_date, self.end_date) # gets images in the specified date range
+                        .filterBounds(self.polygon) # gets images that have some overlap with the tile
+                        .filter(ee.Filter.contains('.geo', self.polygon.buffer(200))) # gets images containing the tile plus some buffer
+                        .map(lambda image: image.clip(self.polygon)) # crops to tile
+                        .filterMetadata('instrumentMode', 'equals', 'IW') # selects for the interferometric wide swath mode
+                        .map(lambda image: image.set('date_difference', image.date().difference(self.s2_date, 'day').abs())) # calculate days off from S2 image
+                        .sort('date_difference')) # sort in ascending order by days off
 
-        S1 = ee.ImageCollection(cfg.collection)
-        image = S1.filterBounds(self.polygon)\
-                .filterDate(self.start_date, self.end_date)\
-                .filterMetadata('instrumentMode', 'equals', 'IW')\
-                .map(lambda image: image.clip(self.polygon))\
-        
-        points_filter = get_points_filter(self.polygon, buffer_size = -200)
-        image = image.filter(points_filter)
-
-        # getting the images closest to s2 date
-        img = image.map(get_closest_date)
-        img = img.sort('date_difference')
 
         # getting the ascending and descending images
         img_asc = img.filterMetadata('orbitProperties_pass', 'equals', 'ASCENDING').first()
