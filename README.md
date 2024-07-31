@@ -16,7 +16,7 @@ This repository contains scripts to download the data presented in the paper [MM
 ## 📢 Latest Updates
 :fire::fire::fire: Last Updated on 2024.08.01 :fire::fire::fire:
 
-- Paper accepted to ECCV 2024 !!
+- **Paper accepted to ECCV 2024 !!**
 - Updated datasets to version v001.
     - Dataset fix: Removed duplicates and corrected ERA5 yearly statistics.
 - Fixed downloading scripts.
