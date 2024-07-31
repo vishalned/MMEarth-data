@@ -13,7 +13,13 @@
 
 This repository contains scripts to download the data presented in the paper [MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning](https://arxiv.org/abs/2405.02771). The scripts are used  to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities. The data is downloaded from [Google Earth Engine](https://earthengine.google.com/).
 
+## 📢 Latest Updates
+:fire::fire::fire: Last Updated on 2024.08.01 :fire::fire::fire:
 
+- Paper accepted to ECCV 2024 !!
+- Updated datasets to version v001.
+    - Dataset fix: Removed duplicates and corrected ERA5 yearly statistics.
+- Fixed downloading scripts.
 
 
 ## Table of contents
