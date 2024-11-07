@@ -14,8 +14,8 @@
 This repository contains scripts to download the data presented in the paper [MMEarth: Exploring Multi-Modal Pretext Tasks For Geospatial Representation Learning](https://arxiv.org/abs/2405.02771). The scripts are used  to download large scale satellite data from different sensors and satellites (Sentinel-2, Sentinel-1, ERA5 - temperature & precipitation, Aster GDEM etc) which we call modalities. The data is downloaded from [Google Earth Engine](https://earthengine.google.com/).
 
 ## 📢 Latest Updates
-:fire::fire::fire: Last Updated on 2024.08.01 :fire::fire::fire:
-
+:fire::fire::fire: Last Updated on 2024.11.07 :fire::fire::fire:
+- Dataset is now available on [TorchGeo](https://torchgeo.readthedocs.io/en/latest/api/datasets.html).
 - **Paper accepted to ECCV 2024 !!**
 - Updated datasets to version v001.
     - Dataset fix: Removed duplicates and corrected ERA5 yearly statistics.
@@ -32,7 +32,7 @@ This repository contains scripts to download the data presented in the paper [MM
 7. [Citation](https://github.com/vishalned/MMEarth-data?tab=readme-ov-file#citation)
 
 ## Data Download
-The MMEarth data can be downloaded using the following links. To enable more easier development with Multi-Modal data, we also provide 2 more "taster" datasets along with the original MMEarth data. The license for the data is [CC BY 4.0](https://github.com/vishalned/MMEarth-data/blob/main/LICENSE-data).
+The MMEarth data can be downloaded using the following links. To enable more easier development with Multi-Modal data, we also provide 2 more "taster" datasets along with the original MMEarth data. The license for the data is [CC BY 4.0](https://github.com/vishalned/MMEarth-data/blob/main/LICENSE-data). 
 
 :bangbang:  **UPDATE: The new Version 001 data is ready to download.** 
 
@@ -53,7 +53,7 @@ All 3 dataset have a similar structure as below:
   
 
 ## Data Loading
-A sample Jupyter Notebook that shows an example to load the data using pytorch is [here](https://github.com/vishalned/MMEarth-train/blob/main/examples/data_loader_example.ipynb).
+A sample Jupyter Notebook that shows an example to load the data using pytorch is [here](https://github.com/vishalned/MMEarth-train/blob/main/examples/data_loader_example.ipynb). Alternatively, the dataloader has also been added to [TorchGeo](https://torchgeo.readthedocs.io/en/latest/api/datasets.html).
 
 ## Getting Started
 To get started with this repository, you can install the dependencies and packages with this command 
