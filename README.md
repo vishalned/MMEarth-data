@@ -15,7 +15,7 @@ This repository contains scripts to download the data presented in the paper [MM
 
 ## 📢 Latest Updates
 :fire::fire::fire: Last Updated on 2024.11.07 :fire::fire::fire:
-- Dataset is now available on [TorchGeo](https://torchgeo.readthedocs.io/en/latest/api/datasets.html).
+- MMEarth has been added to the [TorchGeo](https://torchgeo.readthedocs.io/en/latest/api/datasets.html) datasets class.
 - **Paper accepted to ECCV 2024 !!**
 - Updated datasets to version v001.
     - Dataset fix: Removed duplicates and corrected ERA5 yearly statistics.
