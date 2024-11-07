@@ -15,7 +15,7 @@ This repository contains scripts to download the data presented in the paper [MM
 
 ## 📢 Latest Updates
 :fire::fire::fire: Last Updated on 2024.11.07 :fire::fire::fire:
-- MMEarth has been added to the [TorchGeo](https://torchgeo.readthedocs.io/en/latest/api/datasets.html) datasets class.
+- MMEarth has been added to the [TorchGeo](https://torchgeo.readthedocs.io/en/latest/api/datasets.html#mmearth) datasets class.
 - **Paper accepted to ECCV 2024 !!**
 - Updated datasets to version v001.
     - Dataset fix: Removed duplicates and corrected ERA5 yearly statistics.
@@ -53,7 +53,7 @@ All 3 dataset have a similar structure as below:
   
 
 ## Data Loading
-A sample Jupyter Notebook that shows an example to load the data using pytorch is [here](https://github.com/vishalned/MMEarth-train/blob/main/examples/data_loader_example.ipynb). Alternatively, the dataloader has also been added to [TorchGeo](https://torchgeo.readthedocs.io/en/latest/api/datasets.html).
+A sample Jupyter Notebook that shows an example to load the data using pytorch is [here](https://github.com/vishalned/MMEarth-train/blob/main/examples/data_loader_example.ipynb). Alternatively, the dataloader has also been added to [TorchGeo](https://torchgeo.readthedocs.io/en/latest/api/datasets.html#mmearth).
 
 ## Getting Started
 To get started with this repository, you can install the dependencies and packages with this command 
